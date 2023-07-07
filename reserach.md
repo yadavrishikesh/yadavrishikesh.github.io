@@ -1,6 +1,6 @@
 --- 
 layout: page
-title: "Reserach"
+title: "Research"
 ---
 
 ## In preparation
