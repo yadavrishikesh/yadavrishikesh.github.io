@@ -16,7 +16,7 @@ title: "Reserach"
 - Rishikesh Yadav, Raphael Huser, and Thomas Opitz. *Spatial hierarchical modeling of threshold exceedances using rate mixtures*. 
 `Environmetrics 32 (3), e2662`. 
 - Rishikesh Yadav, Raphael Huser, and Thomas Opitz. *A flexible Bayesian hierarchical modeling framework for spatially dependent peaks-over-threshold data.* `Spatial Statistics 51, 100672`.
-- - Daniela Cisneros, Yan Gong, Rishikesh Yadav, Arnab Hazra, and Raphael Huser. *A combined statistical and machine learning approach for spatial prediction of extreme wildfire frequencies and sizes*. `Extremes, 1-30`.
+- Daniela Cisneros, Yan Gong, Rishikesh Yadav, Arnab Hazra, and Raphael Huser. *A combined statistical and machine learning approach for spatial prediction of extreme wildfire frequencies and sizes*. `Extremes, 1-30`.
 
 
 
