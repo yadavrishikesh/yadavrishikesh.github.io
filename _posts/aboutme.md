@@ -1,4 +1,4 @@
 ---
-layeout: page
+layeout: post
 title: "About me"
 ---
