@@ -15,10 +15,10 @@ Center in Denver, Colorado, United States.
 - Masterclass in Bayesian Statistics at CIRM (Marseille, France), Oct., 22-26,
 2018. 
 
-## Teaching 
+## Teaching/Teaching assistant
 - Teaching assistant of the course Linear Models (STAT 230) for the 2018 - 19 Fall semester.
 - Teaching assistant of the course Probability and Statistics (STAT 220) for the
-2020 - 21 Fall semester. 
+2020–21 Fall semester. 
 
 ## Course notes 
 - Statistics of Extremes (STAT 380)
