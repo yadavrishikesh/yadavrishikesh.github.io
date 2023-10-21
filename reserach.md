@@ -10,7 +10,7 @@ title: "Research"
 
 
 ## Submitted 
-- [*] Arnab Hazra, Pratik Nag, Rishikesh Yadav, and Ying Sun (2023). *Exploring the efficacy of statistical and deep learning methods for large spatial datasets: A Case Study. Submitted for publication* [arXiv preprint](arXiv:2308.05812)
+- [*] Arnab Hazra, Pratik Nag, Rishikesh Yadav, and Ying Sun (2023). *Exploring the efficacy of statistical and deep learning methods for large spatial datasets: A Case Study. Submitted for publication*. [arXiv preprint](arXiv:2308.05812)
 
 ## Published manuscript
  - Rishikesh Yadav, Raphael Huser, Thomas Opitz, and Luigi Lombardo (2023). *Joint modeling of landslide counts and sizes using spatial marked point processes with sub-asymptotic mark distributions (2023)* `Journal of the Royal Statistical Society Series C: Applied Statistics, qlad077`. [Link](https://doi.org/10.1093/jrsssc/qlad077)
