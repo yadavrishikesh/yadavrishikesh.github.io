@@ -14,8 +14,8 @@ title: "Research"
 
 ## Published manuscript
  - Rishikesh Yadav, Raphael Huser, Thomas Opitz, and Luigi Lombardo (2023). *Joint modeling of landslide counts and sizes using spatial marked point processes with sub-asymptotic mark distributions (2023)* `Journal of the Royal Statistical Society Series C: Applied Statistics, qlad077`. [Link](https://doi.org/10.1093/jrsssc/qlad077)
-- Rishikesh Yadav, Raphael Huser, and Thomas Opitz(2022). *A flexible Bayesian hierarchical modeling framework for spatially dependent peaks-over-threshold data.* `Spatial Statistics 51, 100672`. [Link}(https://www.sciencedirect.com/science/article/pii/S2211675322000446)
-- Daniela Cisneros, Yan Gong, Rishikesh Yadav, Arnab Hazra, and Raphael Huser(2022). *A combined statistical and machine learning approach for spatial prediction of extreme wildfire frequencies and sizes*. `Extremes, 1-30`. {Link](https://link.springer.com/article/10.1007/s10687-022-00460-8)
+- Rishikesh Yadav, Raphael Huser, and Thomas Opitz(2022). *A flexible Bayesian hierarchical modeling framework for spatially dependent peaks-over-threshold data.* `Spatial Statistics 51, 100672`. [Link](https://www.sciencedirect.com/science/article/pii/S2211675322000446)
+- Daniela Cisneros, Yan Gong, Rishikesh Yadav, Arnab Hazra, and Raphael Huser(2022). *A combined statistical and machine learning approach for spatial prediction of extreme wildfire frequencies and sizes*. `Extremes, 1-30`. [Link](https://link.springer.com/article/10.1007/s10687-022-00460-8)
 - Rishikesh Yadav, Raphael Huser, and Thomas Opitz (2021). *Spatial hierarchical modeling of threshold exceedances using rate mixtures*. 
 `Environmetrics 32 (3), e2662`. [Link](https://onlinelibrary.wiley.com/doi/full/10.1002/env.2662)
 
