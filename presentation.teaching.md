@@ -3,7 +3,7 @@ layout: page
 title: "Presentation and teaching"
 ---
 
-## Conferences
+## Presentation/Conferences
 - 2023 Joint Statistical Meeting (JSM), Aug. 5 - Aug. 10,  Toronto, Canada.
 - 2023 Extreme Value Analysis Conference, June 26 - June 30, Milan, Italy.
 - 2022 IISA Conference, Dec. 26 – Dec. 30, Banglore, India
