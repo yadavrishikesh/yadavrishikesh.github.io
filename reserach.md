@@ -5,7 +5,7 @@ title: "Research"
 
 ## In preparation
 - Léo R. Belzile, Rishikesh Yadav, and Nicholas R. Beck. *Bayesian modeling of sparse conditional spatial extremes processes subject to left-censoring*.
-- Rishikesh Yadav, Raphael Huser, Thomas Opitz, Léo R. Belzile, Luigi Lombardo, and Hakan Tanyas. *Joint modeling of Wenchuan landsldies counts and sizes using multivariate SPDE approach*
+- Rishikesh Yadav, Raphael Huser, Thomas Opitz, Léo R. Belzile, Luigi Lombardo, and Hakan Tanyas. *Joint modeling of Wenchuan landsldie counts and sizes using multivariate SPDE approach*
 - Léo R. Belzile, Arnab Hazra, and Rishikesh Yadav. *An utopic adventure in the modeling of conditional univariate and multivariate extremes*.
 
 
