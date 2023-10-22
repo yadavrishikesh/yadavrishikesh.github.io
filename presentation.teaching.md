@@ -4,14 +4,18 @@ title: "Presentation and teaching"
 ---
 
 ## Conferences
-- Extreme Value Analysis Conference 2021, Jun., 28 - Jul., 2, Virtual.
-- 13th International Conference of the ERCIM WG on Computational and
-Methodological Statistics (CMStatistics 2020), Dec., 19-21, 2020, Virtual.
-- Joint Statistical Meeting (JSM 2020), Aug., 1-6, 2020, Virtual
-- 11th International Conference on Extreme Value Analysis, Jul., 1–5, 2019, Zagreb, Croatia.
-- Joint Statistical Meeting (JSM 2019), Jul., 27 { Aug., 1, 2019, Colorado Convention
+- 2023 Joint Statistical Meeting (JSM), Aug. 5 -- Aug. 10,  Toronto, Canada.
+- 2023 Extreme Value Analysis Conference, June., 26 -- 30, Milan, Italy.
+- 2022 IISA Conference, Dec. 26 – Dec. 30, Banglore, India
+- 2022 Joint Statistical Meeting (JSM), Aug. 6 –- Aug. 11,  Washington, D.C., United States. 
+- 2021 Extreme Value Analysis Conference, Jun., 28 - Jul., 2, Virtual.
+- 2020 CMStatistics 13th International Conference of the ERCIM WG on Computational and
+Methodological Statistics, Dec., 19-21, Virtual.
+- 2020 Joint Statistical Meeting (JSM), Aug., 1-6, Virtual
+- 2019 Extreme Value Analysis, Jul., 1–5, Zagreb, Croatia.
+- 2019 Joint Statistical Meeting (JSM), Jul., 27- Aug., 1, Colorado Convention
 Center in Denver, Colorado, United States.
-- Masterclass in Bayesian Statistics at CIRM (Marseille, France), Oct., 22-26, 2018.
+- 2018 Masterclass in Bayesian Statistics at CIRM (Marseille, France), Oct., 22-26.
 
 ## Teaching/Teaching assistant
 - Teaching assistant of the course Linear Models (STAT 230) for the 2018 - 19 Fall semester.
