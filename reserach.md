@@ -3,13 +3,13 @@ layout: page
 title: "Research"
 ---
 
-## In preparation
+## Manuscript in preparation
 - Léo R. Belzile, Rishikesh Yadav, and Nicholas R. Beck. *Bayesian modeling of sparse conditional spatial extremes processes subject to left-censoring*.
 - Rishikesh Yadav, Raphael Huser, Thomas Opitz, Léo R. Belzile, Luigi Lombardo, and Hakan Tanyas. *Joint modeling of Wenchuan landsldie counts and sizes using multivariate SPDE approach*
 - Léo R. Belzile, Arnab Hazra, and Rishikesh Yadav. *An utopic adventure in the modeling of conditional univariate and multivariate extremes*.
 
 
-## Submitted 
+## Submitted manuscript
 - [^1] Arnab Hazra, Pratik Nag, Rishikesh Yadav, and Ying Sun (2023). *Exploring the efficacy of statistical and deep learning methods for large spatial datasets: A Case Study. Submitted for publication*. [arXiv preprint](https://arxiv.org/abs/2308.05812)
 
 ## Published manuscript
