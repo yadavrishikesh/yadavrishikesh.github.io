@@ -29,7 +29,8 @@ Center in Denver, Colorado, United States.
 - Computational Statistics (STAT 340)
 - Contemporary Topics in Computational Science (AMCS 394E)
 - Machine Learning (CS 229)
-- Data mining and Pattern Recognigition
+- Data Mining and Pattern Recognigition
+- Nonparameteric Statistics 
 - Functional Data Analysis
 - Advanced Inference
 - Linear Models
