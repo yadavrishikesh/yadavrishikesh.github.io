@@ -14,6 +14,9 @@ title: "Research"
 ## Submitted Manuscript
 - [^2] Léo R. Belzile, Arnab Hazra, and Rishikesh Yadav. *An utopic adventure in the modeling of conditional univariate and multivariate extremes*. [arXiv preprint](https://arxiv.org/abs/2312.13517)
 
+[^1] Jointly first author of the paper;
+[^2] Contributed in three out of four sub-tasks
+
 ## Manuscript in Preparation
 - Léo R. Belzile, Rishikesh Yadav, and Nicholas R. Beck. *Bayesian modeling of sparse conditional spatial extremes processes subject to left-censoring.*
 - Rishikesh Yadav, Raphael Huser, Thomas Opitz, Léo R. Belzile, Luigi Lombardo, and Hakan Tanyas. *Joint modeling of Wenchuan landsldie counts and sizes using multivariate SPDE approach.*
@@ -22,6 +25,4 @@ title: "Research"
 ## Book Chapter in Prepration 
 - Rishikesh Yadav, Raphael Huser, and Luigi Lombardo. *Statistics of extremes for natural hazards: landslides and earthquakes.* 
 
-[^1] Jointly first author of the paper;
-[^2] Contributed in three out of four sub-tasks
 
