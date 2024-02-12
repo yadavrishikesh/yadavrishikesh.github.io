@@ -3,7 +3,7 @@ layout: page
 title: "Presentation and teaching"
 ---
 
-## Presentation/Conferences
+## Presentations/Conferences
 - 2023 Joint Statistical Meeting (JSM), Aug. 5 - Aug. 10,  Toronto, Canada.
 - 2023 Extreme Value Analysis Conference, June 26 - June 30, Milan, Italy.
 - 2022 IISA Conference, Dec. 26 – Dec. 30, Banglore, India
@@ -22,10 +22,17 @@ Center in Denver, Colorado, United States.
 - Teaching assistant of the course Probability and Statistics (STAT 220) for the
 2020–21 Fall semester. 
 
-## Course notes 
+## Key Courses 
 - Statistics of Extremes (STAT 380)
 - Spatial Statistics (STAT 370)
 - Bayesian Statistics (STAT 240)
 - Computational Statistics (STAT 340)
 - Contemporary Topics in Computational Science (AMCS 394E)
-- Machine Learning (CS 229) 
+- Machine Learning (CS 229)
+- Data mining and Pattern Recognigition
+- Functional Data Analysis
+- Advanced Inference
+- Linear Models
+
+
+
