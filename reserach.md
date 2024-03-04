@@ -12,7 +12,10 @@ title: "Research"
 `Environmetrics 32 (3), e2662`. [ https://doi.org/10.1002/env.2662](https://doi.org/10.1002/env.2662)
 
 ## Submitted Manuscript
+### Reserach paper
 - [^2] Léo R. Belzile, Arnab Hazra, and Rishikesh Yadav. *An utopic adventure in the modeling of conditional univariate and multivariate extremes*. [arXiv preprint](https://arxiv.org/abs/2312.13517)
+ ### Book Chapter
+- Rishikesh Yadav, Raphael Huser, and Luigi Lombardo. *Statistics of extremes for natural hazards: landslides and earthquakes.* 
 
 [^1] Jointly first author of the paper;
 [^2] Contributed in three out of four sub-tasks
@@ -22,7 +25,6 @@ title: "Research"
 - Rishikesh Yadav, Raphael Huser, Thomas Opitz, Léo R. Belzile, Luigi Lombardo, and Hakan Tanyas. *Joint modeling of Wenchuan landsldie counts and sizes using multivariate SPDE approach.*
 - Rishikesh Yadav, Alexandra M. Schmidt, Aurélie Labbe, and Pratheepa Jeganathan.  *Optimizing Bike Networks of sensors on Montreal Island: A Spatiotemporal Bayesian Modeling Framework.*
 
-## Book Chapter in Prepration 
-- Rishikesh Yadav, Raphael Huser, and Luigi Lombardo. *Statistics of extremes for natural hazards: landslides and earthquakes.* 
+
 
 
