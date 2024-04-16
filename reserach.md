@@ -23,7 +23,7 @@ title: "Research"
 - Rishikesh Yadav, Raphael Huser, and Thomas Opitz (2021). *Spatial hierarchical modeling of threshold exceedances using rate mixtures.* 
 `Environmetrics 32 (3), e2662`. [ https://doi.org/10.1002/env.2662](https://doi.org/10.1002/env.2662)
 
-### Peer reviwed journals list
+### Reviwer 
 - [Spatial Statistics](https://www.sciencedirect.com/journal/spatial-statistics)
 - [Extremes](https://link.springer.com/journal/10687)
 - [Computo](https://computo.sfds.asso.fr/)
