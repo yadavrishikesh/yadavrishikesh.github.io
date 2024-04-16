@@ -15,7 +15,7 @@ title: "Research"
 - Léo R. Belzile, Arnab Hazra, and \*\*Rishikesh Yadav. *An utopic adventure in the modeling of conditional univariate and multivariate extremes*. [arXiv preprint](https://arxiv.org/abs/2312.13517)
 
 ### Book Chapter
-- Rishikesh Yadav, Raphael Huser, and Luigi Lombardo. *Statistics of extremes for natural hazards: landslides and earthquakes.* 
+- Rishikesh Yadav, Raphael Huser, and Luigi Lombardo. *Statistics of extremes for natural hazards: landslides and earthquakes.* [arXive prprint](https://arxiv.org/abs/2404.09156)
 
 
 ## Published Manuscript
