@@ -1,99 +1,80 @@
----
-title: "About"
-permalink: "/about/"
-layout: page
----
+# Personal academic website — setup guide
 
-## Installation
+This is a plain HTML/CSS site (no build tools, no Jekyll) with 5 pages:
+`index.html` (Home), `research.html`, `teaching.html`, `conferences.html`,
+`reading-group.html`, all sharing `style.css` and `script.js`.
 
-Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+## 1. Edit the content
 
-## Features
+Every `[bracketed]` placeholder is something to replace with your own
+details — name, students, papers, courses, talks. Each page also has a
+yellow "edit-note" box at the top; delete that `<div class="edit-note">…`
+line once you're done editing that page.
 
- - supports dark mode on macOS Mojave
- - optional sidebar
- - MathJax support
- - no external ressources
- - included archive page
- - supports pagination
- - feed generation
- - responsive
- - syntax highlighting
- - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
+To add a new entry (e.g. a new student or a new paper), copy one
+`<div class="entry">...</div>` block and edit the text inside it — no
+other code needs to change.
 
-## Based on
+You can edit the files directly on github.com (click the pencil icon on
+any file) or on your computer in any text editor (VS Code recommended).
 
-- [Hyde](https://github.com/poole/hyde)
-- [Minima](https://github.com/jekyll/minima)
-- [Lagrange](https://github.com/LeNPaul/Lagrange)
-- [Font Awesome](http://fontawesome.io/)
-- [KaTeX](https://katex.org/)
-- [Pygments](https://github.com/richleland/pygments-css)
+## 2. Put it on GitHub
 
-## Installation (jekyll-remote-theme method)
+1. Create a **new, empty** repository on GitHub named exactly:
+   `yourusername.github.io` (replace `yourusername` with your actual
+   GitHub username — this exact naming is what makes GitHub Pages serve
+   it automatically).
+2. Upload these files to the repository:
+   - Easiest: on the repo's GitHub page, click **Add file → Upload files**,
+     drag in all the files from this folder, and commit.
+   - Or with git, from inside this folder:
+     ```
+     git init
+     git remote add origin https://github.com/yourusername/yourusername.github.io.git
+     git add .
+     git commit -m "Initial site"
+     git branch -M main
+     git push -u origin main
+     ```
 
-You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, copy over the `index.html` file and add this to your `_config.yml`:
+## 3. Turn on GitHub Pages
 
-```yaml
-remote_theme: niklasbuschmann/contrast@v2.11
+1. In the repo, go to **Settings → Pages**.
+2. Under "Build and deployment", set **Source** to `Deploy from a branch`.
+3. Set **Branch** to `main` and folder to `/ (root)`, then Save.
+4. Wait about a minute — your site will be live at:
+   `https://yourusername.github.io`
 
-plugins:
-  - jekyll-remote-theme
-```
+## 4. Making future edits
 
-Note: to enable icons you also need to copy over the `_data` folder.
+Any time you want to update something (new student, new paper, new talk):
+edit the relevant `.html` file (on github.com or locally), commit/push the
+change, and the live site updates automatically within a minute or two.
 
-## Config
+## 5. Adding photos
 
-Your `_config.yml` could for example look like this:
+Photos now have slots on every page — Home, Research, Teaching,
+Conferences & Workshops, and Reading Group. The full list of filenames
+and exactly which folder each goes in is in `images/README.txt` — open
+that file first.
 
-```yaml
-title: "Blog Title"
-author: "Blog Author"
-description: "My personal blog about ... something"
-permalink: /:title/
-lang: "en"
-excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
+**To add a photo:** upload a file with the exact expected name into the
+matching subfolder of `images/` (GitHub: **Add file → Upload files**).
+No code editing needed — the site already points at those filenames.
 
-# Layout
+**To add a photo somewhere there isn't already a slot:** `images/README.txt`
+also has two ready-to-paste snippets — one for a single photo with a
+caption, one for a grid of photos — that you can drop into any `.html`
+file, anywhere you like. Just point `src` at any image you've uploaded.
+This means you're never limited to the slots already built in.
 
-show_excerpts: true        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
-show_sidebar: false        # show a sidebar instead of the usual header
+Keep photos under ~500KB each so the site stays fast — resize/compress
+first with a free tool like squoosh.app. Square photos (e.g. 600x600px)
+work best for profile/student photos; 4:3 photos (e.g. 800x600px) work
+best for galleries.
 
-# Menu
+## 6. Other optional next steps
 
-navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
-
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
-
-comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
-
-plugins:
- - jekyll-feed
-
-```
-
-## MathJax
-
-Contrast comes preinstalled with a leightweight alternative to MathJax called [KaTeX](https://katex.org/). To display equations in a post simply set `mathjax: true` in the article's front matter.
-
-## License
-
-[public domain](http://unlicense.org/)
-
-## Screenshots
-
-![screenshot](https://user-images.githubusercontent.com/4943215/109431850-cd711780-7a08-11eb-8601-2763f2ee6bb4.png)
-
-![screenshot](https://user-images.githubusercontent.com/4943215/109431832-b6cac080-7a08-11eb-9c5e-a058680c23a1.png)
-
-![screenshot](https://user-images.githubusercontent.com/4943215/73125194-5f0b8b80-3fa4-11ea-805c-8387187503ad.png)
+- Add a custom domain later via **Settings → Pages → Custom domain**.
+- Add a CV: drop `cv.pdf` into the folder and point the "cv (pdf)" link
+  in `index.html` to `cv.pdf`.

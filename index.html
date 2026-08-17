@@ -1,10 +1,156 @@
----
-layout: default
-title: "Home"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Your Name] — IIT Mandi</title>
+<meta name="description" content="[Your Name], Assistant Professor at IIT Mandi. Research group, publications, teaching, and talks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-{% if site.show_excerpts %}
-  {% include home.html %}
-{% else %}
-  {% include archive.html title="Posts" %}
-{% endif %}
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">IITM</span>
+      <span class="brand-name">[Your Name]</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav class="primary-nav" id="primary-nav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="conferences.html">Conferences &amp; Workshops</a>
+      <a href="reading-group.html">Reading Group</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero container">
+    <div class="hero-flex">
+      <div class="hero-text">
+        <div class="hero-eyebrow">Assistant Professor · School of [Your School] · IIT Mandi</div>
+        <h1>[Your Name]</h1>
+        <p class="role">[Your Research Area, e.g. "Machine Learning · Control Systems · Applied Mathematics"]</p>
+        <p class="lede">
+          I lead a research group at IIT Mandi working on [one– or two-sentence description
+          of what your group works on, written for a visitor who has never heard of the topic].
+          Before joining IIT Mandi I was at [previous affiliation, PhD / postdoc institution].
+        </p>
+        <div class="hero-links">
+          <a href="mailto:yourname@iitmandi.ac.in">email</a>
+          <a href="https://scholar.google.com/">google scholar</a>
+          <a href="https://github.com/yourusername">github</a>
+          <a href="#">cv (pdf)</a>
+          <a href="https://www.linkedin.com/">linkedin</a>
+        </div>
+      </div>
+      <!-- Replace images/profile.jpg with your own photo (square-ish, at least 300x300px) -->
+      <img class="hero-photo" src="images/profile.jpg" alt="[Your Name]">
+    </div>
+  </section>
+
+  <section class="block container">
+    <div class="block-head">
+      <h2>Recent updates</h2>
+      <span class="block-count">log</span>
+    </div>
+    <div class="catalog">
+      <div class="entry">
+        <div class="entry-id">2026·07</div>
+        <div>
+          <p class="entry-title">[Paper title] accepted at [Conference/Journal name]</p>
+          <p class="entry-desc">One line on why it matters, or who it's with.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">2026·05</div>
+        <div>
+          <p class="entry-title">[Student name] joined the group as a PhD student</p>
+          <p class="entry-desc">Working on [topic].</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">2026·02</div>
+        <div>
+          <p class="entry-title">Gave an invited talk at [event name]</p>
+          <p class="entry-desc">[City/venue] — talk on [topic].</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block container">
+    <div class="block-head">
+      <h2>Explore</h2>
+    </div>
+    <div class="catalog">
+      <div class="entry">
+        <div class="entry-id">01</div>
+        <div>
+          <p class="entry-title"><a href="research.html">Research</a></p>
+          <p class="entry-desc">Group members, ongoing projects, and manuscripts — submitted and published.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">02</div>
+        <div>
+          <p class="entry-title"><a href="teaching.html">Teaching</a></p>
+          <p class="entry-desc">Courses taught at IIT Mandi, by semester.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">03</div>
+        <div>
+          <p class="entry-title"><a href="conferences.html">Conferences &amp; Workshops</a></p>
+          <p class="entry-desc">Talks given, and workshops attended or organized.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">04</div>
+        <div>
+          <p class="entry-title"><a href="reading-group.html">Reading Group</a></p>
+          <p class="entry-desc">What the group is reading, and how to join.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block container">
+    <div class="block-head">
+      <h2>Moments</h2>
+      <span class="block-count">gallery</span>
+    </div>
+    <p class="block-intro">Lab, campus, conferences, celebrations — whatever you'd like visitors to see. Add or remove photos freely.</p>
+    <div class="gallery">
+      <figure>
+        <img src="images/moments/moment-01.jpg" alt="[Caption]">
+        <figcaption>[Caption, e.g. "Lab, IIT Mandi"]</figcaption>
+      </figure>
+      <figure>
+        <img src="images/moments/moment-02.jpg" alt="[Caption]">
+        <figcaption>[Caption]</figcaption>
+      </figure>
+      <figure>
+        <img src="images/moments/moment-03.jpg" alt="[Caption]">
+        <figcaption>[Caption]</figcaption>
+      </figure>
+      <figure>
+        <img src="images/moments/moment-04.jpg" alt="[Caption]">
+        <figcaption>[Caption]</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer container">
+  <p>[Your Name] · Assistant Professor · IIT Mandi, Himachal Pradesh · <a href="mailto:yourname@iitmandi.ac.in">yourname@iitmandi.ac.in</a></p>
+  <p>Last updated: [Month Year]</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
