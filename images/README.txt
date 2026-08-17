@@ -3,7 +3,7 @@
 ============================================================
 
 HOME PAGE (index.html)
-  images/profile.jpg                    your photo, top of page
+  images/profile.png                    your photo, top of page
   images/moments/moment-01.jpg          gallery photo 1
   images/moments/moment-02.jpg          gallery photo 2
   images/moments/moment-03.jpg          gallery photo 3
