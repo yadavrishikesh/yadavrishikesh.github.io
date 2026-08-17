@@ -11,8 +11,8 @@ HOME PAGE (index.html)
 
 RESEARCH PAGE (research.html)
   images/group-photo.jpg                optional group photo, top of page
-  images/students/phd-01.jpg            PHD·01 card photo
-  images/students/phd-02.jpg            PHD·02 card photo
+  images/students/Indrajeet.png            PHD·01 card photo
+  images/students/somnath.jpeg            PHD·02 card photo
   images/students/msc-01.jpg            MSC·01 card photo
   images/students/btp-01.jpg            BTP·01 card photo
   images/students/btp-02.jpg            BTP·02 card photo
