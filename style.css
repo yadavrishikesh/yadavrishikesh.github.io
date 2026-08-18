@@ -434,3 +434,40 @@ footer.site-footer a { color: var(--ink-faint); }
   padding: 10px 14px;
   margin-bottom: 24px;
 }
+
+/* ============================================================
+   Student grid — 2-column layout with larger photos (Research page)
+   ============================================================ */
+.student-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.student-card {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 20px;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
+.student-photo {
+  width: 108px;
+  height: 108px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  background: var(--rule-soft);
+  flex: 0 0 auto;
+}
+.student-info { min-width: 0; }
+.student-info .entry-id { margin-bottom: 4px; }
+.student-info .entry-title { margin-top: 0; }
+@media (max-width: 720px) {
+  .student-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .student-card { flex-direction: column; align-items: flex-start; }
+  .student-photo { width: 100%; height: 200px; }
+}
