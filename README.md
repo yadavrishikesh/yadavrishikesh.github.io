@@ -1,80 +1,128 @@
-# Personal academic website — setup guide
+# Rishikesh Yadav — academic website
 
-This is a plain HTML/CSS site (no build tools, no Jekyll) with 5 pages:
-`index.html` (Home), `research.html`, `teaching.html`, `conferences.html`,
-`reading-group.html`, all sharing `style.css` and `script.js`.
+Personal academic site for Rishikesh Yadav (Assistant Professor, School of
+Mathematical and Statistical Sciences, IIT Mandi), published with GitHub Pages
+at <https://yadavrishikesh.github.io>.
 
-## 1. Edit the content
+Plain HTML, CSS and JavaScript. **No build step, no framework, no dependencies.**
+What is in the repository is exactly what the browser receives.
 
-Every `[bracketed]` placeholder is something to replace with your own
-details — name, students, papers, courses, talks. Each page also has a
-yellow "edit-note" box at the top; delete that `<div class="edit-note">…`
-line once you're done editing that page.
+---
 
-To add a new entry (e.g. a new student or a new paper), copy one
-`<div class="entry">...</div>` block and edit the text inside it — no
-other code needs to change.
+## Run it locally
 
-You can edit the files directly on github.com (click the pencil icon on
-any file) or on your computer in any text editor (VS Code recommended).
+Any static file server works. The simplest option, with Python already installed:
 
-## 2. Put it on GitHub
+```bash
+python3 -m http.server 8000
+```
 
-1. Create a **new, empty** repository on GitHub named exactly:
-   `yourusername.github.io` (replace `yourusername` with your actual
-   GitHub username — this exact naming is what makes GitHub Pages serve
-   it automatically).
-2. Upload these files to the repository:
-   - Easiest: on the repo's GitHub page, click **Add file → Upload files**,
-     drag in all the files from this folder, and commit.
-   - Or with git, from inside this folder:
-     ```
-     git init
-     git remote add origin https://github.com/yourusername/yourusername.github.io.git
-     git add .
-     git commit -m "Initial site"
-     git branch -M main
-     git push -u origin main
-     ```
+Then open <http://localhost:8000>.
 
-## 3. Turn on GitHub Pages
+> Opening the `.html` files directly with `file://` also mostly works, but a
+> local server is closer to how GitHub Pages actually serves the site.
 
-1. In the repo, go to **Settings → Pages**.
-2. Under "Build and deployment", set **Source** to `Deploy from a branch`.
-3. Set **Branch** to `main` and folder to `/ (root)`, then Save.
-4. Wait about a minute — your site will be live at:
-   `https://yourusername.github.io`
+There is nothing to install, compile, or watch. Edit a file, refresh the browser.
 
-## 4. Making future edits
+---
 
-Any time you want to update something (new student, new paper, new talk):
-edit the relevant `.html` file (on github.com or locally), commit/push the
-change, and the live site updates automatically within a minute or two.
+## Project layout
 
-## 5. Adding photos
+```
+.
+├── index.html                  Home
+├── research.html               Group members, software, manuscripts
+├── teaching.html               Courses by semester
+├── conferences.html            Talks and workshops
+├── reading-group.html          Reading group sessions
+├── 404.html                    Shown for unknown URLs
+│
+├── assets/
+│   ├── css/
+│   │   ├── main.css            The only stylesheet the pages link to
+│   │   ├── base/               Tokens, reset, base typography
+│   │   ├── layout/             Container, header, footer, section blocks
+│   │   ├── components/         Cards, galleries, tags, hero, ...
+│   │   └── pages/              Rules specific to one kind of page
+│   ├── js/
+│   │   └── main.js             Mobile menu + active nav link
+│   └── images/                 All photos
+│
+├── docs/
+│   ├── STRUCTURE.md            How the code is organised, and why
+│   ├── CONTENT-GUIDE.md        Copy-paste snippets for adding content
+│   └── IMAGES.md               Where photos go and what size they should be
+│
+├── .editorconfig               Shared indentation / whitespace settings
+└── .gitignore
+```
 
-Photos now have slots on every page — Home, Research, Teaching,
-Conferences & Workshops, and Reading Group. The full list of filenames
-and exactly which folder each goes in is in `images/README.txt` — open
-that file first.
+---
 
-**To add a photo:** upload a file with the exact expected name into the
-matching subfolder of `images/` (GitHub: **Add file → Upload files**).
-No code editing needed — the site already points at those filenames.
+## Where do I make a change?
 
-**To add a photo somewhere there isn't already a slot:** `images/README.txt`
-also has two ready-to-paste snippets — one for a single photo with a
-caption, one for a grid of photos — that you can drop into any `.html`
-file, anywhere you like. Just point `src` at any image you've uploaded.
-This means you're never limited to the slots already built in.
+| I want to…                                     | Edit                                             |
+| ---------------------------------------------- | ------------------------------------------------ |
+| Add a student, paper, course, talk, or photo    | The relevant `.html` file — see [docs/CONTENT-GUIDE.md](docs/CONTENT-GUIDE.md) |
+| Change a colour, font, or spacing               | `assets/css/base/tokens.css`                      |
+| Change how a card or gallery looks              | The matching file in `assets/css/components/`     |
+| Change the header, footer, or page width        | `assets/css/layout/`                              |
+| Change the nav links or the name in the header  | Every `.html` file (the header is duplicated — see below) |
+| Change site behaviour                           | `assets/js/main.js`                               |
 
-Keep photos under ~500KB each so the site stays fast — resize/compress
-first with a free tool like squoosh.app. Square photos (e.g. 600x600px)
-work best for profile/student photos; 4:3 photos (e.g. 800x600px) work
-best for galleries.
+New to this repository? Read [docs/STRUCTURE.md](docs/STRUCTURE.md) first —
+it is short, and explains the handful of conventions the whole site follows.
 
-## 6. Other optional next steps
+---
 
-- Add a custom domain later via **Settings → Pages → Custom domain**.
-- Add a CV: drop `cv.pdf` into the folder and point the "cv (pdf)" link
-  in `index.html` to `cv.pdf`.
+## The one thing to know before editing
+
+There is no templating engine, so **the header and footer are copy-pasted into
+all five pages**. If you change the navigation, the name in the header, or the
+footer, you must make the same change in every `.html` file.
+
+They are identical today. A quick way to spot drift:
+
+```bash
+# Prints the nav block of each page — they should all look the same.
+grep -A 6 'id="primary-nav"' *.html
+```
+
+This is the accepted trade-off for having no build step. See
+[docs/STRUCTURE.md](docs/STRUCTURE.md) for the reasoning and the alternatives
+if you ever want to change it.
+
+---
+
+## Deploying
+
+The site deploys itself. GitHub Pages serves the `main` branch from the
+repository root, so:
+
+```bash
+git add .
+git commit -m "Describe what changed"
+git push
+```
+
+The live site updates within a minute or two. There is no build to run and no
+artifact to upload.
+
+If Pages is ever switched off, re-enable it under **Settings → Pages →
+Build and deployment → Deploy from a branch → `main` / `(root)`**.
+
+---
+
+## Conventions worth keeping
+
+- **No inline `style="..."` attributes.** If a page needs a one-off look, add a
+  class in the appropriate CSS file instead.
+- **No hard-coded colours or fonts** outside `assets/css/base/tokens.css`.
+  Everything else references a `var(--token)`.
+- **Every `<img>` has a real `alt`** describing what the photo shows (an empty
+  `alt=""` is correct only for purely decorative images).
+- **Placeholder text is wrapped in `[square brackets]`** so unfinished content
+  is easy to find: `grep -rn "\[" *.html`.
+- The dashed yellow "edit note" box at the top of a page is a reminder that the
+  page still contains placeholders. Delete the `<div class="edit-note">` line
+  once that page holds real content.

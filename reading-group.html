@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reading Group — [Your Name]</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Reading Group — Rishikesh Yadav</title>
+  <meta name="description" content="What the group is reading, session log, and how to join.">
+
+  <!-- Fonts. Swap these out in every page if you change the type stack. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- All styles. main.css imports every other stylesheet (see assets/css/main.css). -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Behaviour: mobile menu + active nav link. Safe to defer. -->
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
 
+<!-- ============================================================
+     SITE HEADER
+     Identical on all five pages. If you edit it, copy the change
+     into every .html file. The only difference between pages is
+     which link carries aria-current="page".
+     ============================================================ -->
 <header class="site-header">
   <div class="nav-wrap">
     <a class="brand" href="index.html">
-      <span class="brand-mark">IITM</span>
-      <span class="brand-name">[Your Name]</span>
+      <span class="brand-mark">IITMandi</span>
+      <span class="brand-name">Rishikesh Yadav</span>
     </a>
+
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+
     <nav class="primary-nav" id="primary-nav">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
@@ -27,81 +45,89 @@
   </div>
 </header>
 
-<main class="container" style="padding-top:48px;">
+<main class="page container">
 
-  <div class="edit-note">Everything in brackets below is a placeholder — replace with your own reading group's details, then delete this note.</div>
+  <div class="edit-note">&ldquo;How to Join&rdquo; and the photo gallery are still placeholders &mdash; fill them in, then delete this note.</div>
 
-  <h1 style="margin-bottom:6px;">Reading Group</h1>
-  <p class="block-intro" style="margin-top:0;">
-    [One paragraph on what the reading group is, who it's for, and how often it meets —
-    e.g. "We meet every Friday at 4pm to discuss a recent paper or a chapter from a book.
-    Open to all interested students at IIT Mandi — email me to be added to the mailing list."]
-  </p>
+  <div class="page-head">
+    <h1>Reading Group</h1>
+    <p class="page-intro">
+      The Deep Learning Reading Group at IIT Mandi is for Master&rsquo;s and PhD students. Slides and code for every session are on <a href="https://github.com/yadavrishikesh/Deep-Learning-Slides-Code">GitHub</a>.
+    </p>
+  </div>
 
-  <!-- Optional photo — delete this <figure> if you don't want one here.
-       Copy/paste this same block anywhere on this page to add another photo. -->
-  <figure class="photo-frame small">
-    <img src="images/reading-group/cover.jpg" alt="[Caption]">
-    <figcaption>[Caption]</figcaption>
-  </figure>
-
+  <!-- ============================================================
+       1. CURRENT THEME
+       ============================================================ -->
   <section class="block">
     <div class="block-head">
       <h2>Current Theme</h2>
-      <span class="block-count">[Semester / Year]</span>
+      <span class="block-count">Spring 2026</span>
     </div>
-    <p class="entry-desc" style="max-width:68ch;">[Name of the current topic/theme the group is working through, and why you chose it.]</p>
+    <p class="block-text">Well-known deep learning architectures (February&ndash;May 2026), following on from an introduction to neural networks and their components in Autumn 2025.</p>
   </section>
 
+  <!-- ============================================================
+       2. TERMS — newest first
+       ============================================================ -->
   <section class="block">
     <div class="block-head">
-      <h2>Sessions</h2>
+      <h2>Terms</h2>
+      <span class="block-count">log</span>
     </div>
+
     <div class="catalog">
+
       <div class="entry">
-        <div class="entry-id">RDG·01</div>
+        <div class="entry-id">RDG&middot;02</div>
         <div>
-          <p class="entry-title">[Paper / chapter title]</p>
-          <p class="entry-meta">[Date] · Presented by [Name]</p>
-          <p class="entry-links"><a href="#">paper</a><a href="#">notes</a></p>
+          <p class="entry-title">Well-known deep learning architectures</p>
+          <p class="entry-meta">February&ndash;May 2026</p>
+          <p class="entry-links"><a href="https://github.com/yadavrishikesh/Deep-Learning-Slides-Code">slides &amp; code</a></p>
         </div>
       </div>
       <div class="entry">
-        <div class="entry-id">RDG·02</div>
+        <div class="entry-id">RDG&middot;01</div>
         <div>
-          <p class="entry-title">[Paper / chapter title]</p>
-          <p class="entry-meta">[Date] · Presented by [Name]</p>
-          <p class="entry-links"><a href="#">paper</a></p>
+          <p class="entry-title">Introduction to neural networks and their components</p>
+          <p class="entry-meta">September&ndash;December 2025</p>
+          <p class="entry-links"><a href="https://github.com/yadavrishikesh/Deep-Learning-Slides-Code">slides &amp; code</a></p>
         </div>
       </div>
+
     </div>
   </section>
 
+  <!-- ============================================================
+       3. HOW TO JOIN
+       ============================================================ -->
   <section class="block">
     <div class="block-head">
       <h2>How to Join</h2>
     </div>
-    <p class="entry-desc" style="max-width:68ch;">
-      [Details: meeting time, room/link, mailing list, or how a student can request to present.]
-    </p>
+    <p class="block-text">[Meeting time, room or video link, mailing list, and how a student can offer to present.]</p>
   </section>
 
+  <!-- ============================================================
+       4. PHOTOS
+       ============================================================ -->
   <section class="block">
     <div class="block-head">
       <h2>Photos</h2>
       <span class="block-count">gallery</span>
     </div>
+
     <div class="gallery">
       <figure>
-        <img src="images/reading-group/session-01.jpg" alt="[Session topic]">
+        <img src="assets/images/profile.png" alt="[Session topic]">
         <figcaption>[Session topic, Date]</figcaption>
       </figure>
       <figure>
-        <img src="images/reading-group/session-02.jpg" alt="[Session topic]">
+        <img src="assets/images/profile.png" alt="[Session topic]">
         <figcaption>[Session topic, Date]</figcaption>
       </figure>
       <figure>
-        <img src="images/reading-group/session-03.jpg" alt="[Session topic]">
+        <img src="assets/images/profile.png" alt="[Session topic]">
         <figcaption>[Session topic, Date]</figcaption>
       </figure>
     </div>
@@ -109,10 +135,13 @@
 
 </main>
 
+<!-- ============================================================
+     SITE FOOTER
+     Identical on all five pages.
+     ============================================================ -->
 <footer class="site-footer container">
-  <p>[Your Name] · Assistant Professor · IIT Mandi, Himachal Pradesh · <a href="mailto:yourname@iitmandi.ac.in">yourname@iitmandi.ac.in</a></p>
+  <p>Rishikesh Yadav &middot; Assistant Professor &middot; IIT Mandi, Himachal Pradesh &middot; <a href="mailto:rishikesh@iitmandi.ac.in">rishikesh@iitmandi.ac.in</a></p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>

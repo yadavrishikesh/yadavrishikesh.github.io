@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rishikesh Yadav — IIT Mandi</title>
-<meta name="description" content="Rishikesh Yadav, Assistant Professor at IIT Mandi. Research group, publications, teaching, and talks.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rishikesh Yadav — IIT Mandi</title>
+  <meta name="description" content="Rishikesh Yadav, Assistant Professor at IIT Mandi. Research group, publications, teaching, and talks.">
+
+  <!-- Fonts. Swap these out in every page if you change the type stack. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- All styles. main.css imports every other stylesheet (see assets/css/main.css). -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Behaviour: mobile menu + active nav link. Safe to defer. -->
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
 
+<!-- ============================================================
+     SITE HEADER
+     Identical on all five pages. If you edit it, copy the change
+     into every .html file. The only difference between pages is
+     which link carries aria-current="page".
+     ============================================================ -->
 <header class="site-header">
   <div class="nav-wrap">
     <a class="brand" href="index.html">
       <span class="brand-mark">IITMandi</span>
       <span class="brand-name">Rishikesh Yadav</span>
     </a>
+
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+
     <nav class="primary-nav" id="primary-nav">
       <a href="index.html" aria-current="page">Home</a>
       <a href="research.html">Research</a>
@@ -29,72 +46,126 @@
 </header>
 
 <main>
+
+  <!-- ============================================================
+       HERO — name, research keywords, short bio, links, photo
+       ============================================================ -->
   <section class="hero container">
     <div class="hero-flex">
       <div class="hero-text">
-        <div class="hero-eyebrow">Assistant Professor · School of Mathematical and Statistical Sciences · IIT Mandi</div>
-        <h1>[Rishikesh Yadav]</h1>
-        <p class="role">Extreme Value Theory · Spatio-Temporal Modeling · Bayesian Computing · Data Science · Environmetrics</p>
+        <div class="hero-eyebrow">Assistant Professor &middot; School of Mathematical and Statistical Sciences &middot; IIT Mandi</div>
+        <h1>Rishikesh Yadav</h1>
+        <p class="role">Extreme Value Theory &middot; Spatio-Temporal Modeling &middot; Bayesian Computing &middot; Data Science &middot; Environmetrics</p>
         <p class="lede">
-          I am an Assistant Professor at IIT Mandi, India, since December 2024 [one– or two-sentence description
-          of what your group works on, written for a visitor who has never heard of the topic].
-          Before joining IIT Mandi I was at [previous affiliation, PhD / postdoc institution].
+          I am an Assistant Professor at IIT Mandi, India, since December 2024. Before joining IIT Mandi, I was a
+          postdoctoral research fellow at <a href="https://www.hec.ca/en/">HEC Montr&eacute;al</a> and
+          <a href="https://www.mcgill.ca/">McGill University</a>, working with Prof.
+          <a href="https://www.hec.ca/en/profs/aurelie.labbe.html">Aur&eacute;lie Labbe</a> and
+          Dr. <a href="https://www.hec.ca/en/profs/leo.belzile.html">L&eacute;o Belzile</a> (Department of Decision Sciences, HEC Montr&eacute;al),
+          Prof. <a href="https://www.mcgill.ca/epi-biostat-occh/alexandra-m-schmidt">Alexandra M. Schmidt</a>
+          (Department of Epidemiology, Biostatistics, and Occupational Health, McGill University), and
+          Dr. <a href="https://experts.mcmaster.ca/display/jeganp1">Pratheepa Jeganathan</a>
+          (Department of Mathematics and Statistics, <a href="https://www.mcmaster.ca/">McMaster University</a>).
         </p>
+        <p class="lede">
+          I received my PhD in Statistics from <a href="https://www.kaust.edu.sa/en/">KAUST</a> in 2022 under the supervision of
+          Prof. <a href="https://cemse.kaust.edu.sa/stat/people/person/raphael-huser">Rapha&euml;l Huser</a>, with the thesis
+          &ldquo;<a href="https://repository.kaust.edu.sa/handle/10754/676592">Bayesian Modeling of Sub-Asymptotic Spatial Extremes</a>&rdquo;.
+          I obtained my M.Sc. in Mathematical Statistics from <a href="https://www.iitk.ac.in/">IIT Kanpur</a> in 2016, and my
+          Bachelor&rsquo;s in Mathematics and Statistics from the <a href="https://www.allduniv.ac.in/">University of Allahabad</a> in 2014.
+        </p>
+        <p class="lede">
+          Office: F5, School of Mathematical and Statistical Sciences (SMSS), North Campus, IIT Mandi 175005, Himachal Pradesh, India.
+        </p>
+
+        <!-- Link row. Add or remove <a> elements freely. -->
         <div class="hero-links">
           <a href="mailto:rishikesh@iitmandi.ac.in">email</a>
-          <a href="https://scholar.google.com/citations?user=k4bIWLoAAAAJ&hl=en&oi=ao/">google scholar</a>
+          <a href="https://scholar.google.com/citations?user=_KNYGucAAAAJ&amp;hl=en&amp;oi=ao">google scholar</a>
           <a href="https://github.com/yadavrishikesh">github</a>
-          <a href="#">cv (pdf)</a>
+          <a href="https://drive.google.com/file/d/1OG3i36R1nW8TY3X6_6zqBKAZAcH4DaO0/view?usp=sharing">cv (pdf)</a>
           <a href="https://www.linkedin.com/in/rishikesh-yadav-69ab371b7/">linkedin</a>
         </div>
       </div>
-      <!-- Replace images/profile.jpg with your own photo (square-ish, at least 300x300px) -->
-      <img class="hero-photo" src="images/profile.png" alt="Rishikesh Yadav">
+
+      <!-- Portrait: square-ish, at least 300x300px. -->
+      <img class="hero-photo" src="assets/images/profile.png" alt="Rishikesh Yadav">
     </div>
   </section>
 
+  <!-- ============================================================
+       RECENT UPDATES — a short news log, newest first
+       Copy one .entry block to add an item.
+       ============================================================ -->
   <section class="block container">
     <div class="block-head">
       <h2>Recent updates</h2>
       <span class="block-count">log</span>
     </div>
+
     <div class="catalog">
+
       <div class="entry">
-        <div class="entry-id">2026·07</div>
+        <div class="entry-id">2026&middot;05</div>
         <div>
-          <p class="entry-title"> Paper title accepted at [Conference/Journal name]</p>
-          <p class="entry-desc">One line on why it matters, or who it's with.</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="entry-id">2026·05</div>
-        <div>
-          <p class="entry-title">Prashant and Khushi joined the group as a PhD student</p>
+          <p class="entry-title">Prashant and Khushi joined the group as PhD students</p>
           <p class="entry-desc">Working on spatiotemporal modeling of cyclonic storms and rare disease data.</p>
         </div>
       </div>
+
       <div class="entry">
-        <div class="entry-id">2026·02</div>
+        <div class="entry-id">2026</div>
         <div>
-          <p class="entry-title">Gave an invited talk at [event name]</p>
-          <p class="entry-desc">[City/venue] — talk on [topic].</p>
+          <p class="entry-title">New manuscript under consideration in <em>Extremes</em></p>
+          <p class="entry-desc">&ldquo;Regression modelling of multivariate precipitation extremes under regular variation,&rdquo; with Arnab Hazra.</p>
         </div>
       </div>
+
+      <div class="entry">
+        <div class="entry-id">2025&middot;06</div>
+        <div>
+          <p class="entry-title">Masterclass in Statistical Data Analytics and Deep Learning, IIT Mandi</p>
+          <p class="entry-desc">Taught the Intro to Predictive Modeling module, 23&ndash;27 June 2025.</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-id">2025</div>
+        <div>
+          <p class="entry-title">Papers published in <em>Extremes</em> and <em>JABES</em></p>
+          <p class="entry-desc">On conditional univariate and multivariate extremes, and on statistical versus deep learning methods for large spatial datasets.</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-id">2024&middot;12</div>
+        <div>
+          <p class="entry-title">Joined IIT Mandi as Assistant Professor</p>
+          <p class="entry-desc">Also gave an invited talk and chaired a session at the 2024 IISA Conference, Kochi.</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
+  <!-- ============================================================
+       EXPLORE — signposts to the other four pages
+       ============================================================ -->
   <section class="block container">
     <div class="block-head">
       <h2>Explore</h2>
     </div>
+
     <div class="catalog">
+
       <div class="entry">
         <div class="entry-id">01</div>
         <div>
           <p class="entry-title"><a href="research.html">Research</a></p>
-          <p class="entry-desc">Group members, ongoing projects, and manuscripts — submitted and published.</p>
+          <p class="entry-desc">Group members, ongoing projects, and manuscripts &mdash; submitted and published.</p>
         </div>
       </div>
+
       <div class="entry">
         <div class="entry-id">02</div>
         <div>
@@ -102,6 +173,7 @@
           <p class="entry-desc">Courses taught at IIT Mandi, by semester.</p>
         </div>
       </div>
+
       <div class="entry">
         <div class="entry-id">03</div>
         <div>
@@ -109,6 +181,7 @@
           <p class="entry-desc">Talks given, and workshops attended or organized.</p>
         </div>
       </div>
+
       <div class="entry">
         <div class="entry-id">04</div>
         <div>
@@ -116,41 +189,51 @@
           <p class="entry-desc">What the group is reading, and how to join.</p>
         </div>
       </div>
+
     </div>
   </section>
 
+  <!-- ============================================================
+       MOMENTS — photo gallery
+       Replace each src with a real photo; see docs/IMAGES.md.
+       ============================================================ -->
   <section class="block container">
     <div class="block-head">
       <h2>Moments</h2>
       <span class="block-count">gallery</span>
     </div>
-    <p class="block-intro">Lab, campus, conferences, celebrations — whatever you'd like visitors to see. Add or remove photos freely.</p>
+
+    <p class="block-intro">Lab, campus, conferences, celebrations &mdash; whatever you would like visitors to see. Add or remove photos freely.</p>
+
     <div class="gallery">
       <figure>
-        <img src="images/moments/moment-01.jpg" alt="[Caption]">
+        <img src="assets/images/profile.png" alt="[Caption]">
         <figcaption>[Caption, e.g. "Lab, IIT Mandi"]</figcaption>
       </figure>
       <figure>
-        <img src="images/moments/moment-02.jpg" alt="[Caption]">
+        <img src="assets/images/profile.png" alt="[Caption]">
         <figcaption>[Caption]</figcaption>
       </figure>
       <figure>
-        <img src="images/moments/moment-03.jpg" alt="[Caption]">
+        <img src="assets/images/profile.png" alt="[Caption]">
         <figcaption>[Caption]</figcaption>
       </figure>
       <figure>
-        <img src="images/moments/moment-04.jpg" alt="[Caption]">
+        <img src="assets/images/profile.png" alt="[Caption]">
         <figcaption>[Caption]</figcaption>
       </figure>
     </div>
   </section>
+
 </main>
 
+<!-- ============================================================
+     SITE FOOTER
+     Identical on all five pages.
+     ============================================================ -->
 <footer class="site-footer container">
-  <p>Rishikesh Yadav · Assistant Professor · IIT Mandi, Himachal Pradesh · <a href="mailto:rishikesh@iitmandi.ac.in">rishikesh@iitmandi.ac.in</a></p>
-  <p>Last updated: [Month Year]</p>
+  <p>Rishikesh Yadav &middot; Assistant Professor &middot; IIT Mandi, Himachal Pradesh &middot; <a href="mailto:rishikesh@iitmandi.ac.in">rishikesh@iitmandi.ac.in</a></p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>

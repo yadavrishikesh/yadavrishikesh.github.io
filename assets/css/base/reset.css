@@ -1,0 +1,41 @@
+/* ============================================================
+   BASE / RESET
+   ------------------------------------------------------------
+   A deliberately tiny reset. Only the handful of browser
+   defaults this site actually needs to override.
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Images never overflow their container, and never sit on a
+   text baseline (which would add a mysterious 4px gap). */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Visible keyboard focus ring for every interactive element.
+   Do not remove this — it is what makes the site usable
+   without a mouse. */
+:focus-visible {
+  outline: 2px solid var(--pine);
+  outline-offset: 3px;
+}

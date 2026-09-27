@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research — Rishikesh Yadav</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Research — Rishikesh Yadav</title>
+  <meta name="description" content="Group members, software, and manuscripts in preparation, submitted, and published.">
+
+  <!-- Fonts. Swap these out in every page if you change the type stack. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- All styles. main.css imports every other stylesheet (see assets/css/main.css). -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Behaviour: mobile menu + active nav link. Safe to defer. -->
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
 
+<!-- ============================================================
+     SITE HEADER
+     Identical on all five pages. If you edit it, copy the change
+     into every .html file. The only difference between pages is
+     which link carries aria-current="page".
+     ============================================================ -->
 <header class="site-header">
   <div class="nav-wrap">
     <a class="brand" href="index.html">
       <span class="brand-mark">IITMandi</span>
       <span class="brand-name">Rishikesh Yadav</span>
     </a>
+
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+
     <nav class="primary-nav" id="primary-nav">
       <a href="index.html">Home</a>
       <a href="research.html" aria-current="page">Research</a>
@@ -27,316 +45,353 @@
   </div>
 </header>
 
-<main class="container" style="padding-top:48px;">
+<main class="page container">
 
-  <div class="edit-note">Everything in brackets below is a placeholder — replace with your own group's details, then delete this note.</div>
+  <div class="edit-note">Items in brackets are still placeholders &mdash; student surnames, start dates, thesis topics, and roles for the Masters &amp; BTech cards. Fill them in, then delete this note.</div>
 
-  <h1 style="margin-bottom:6px;">Research</h1>
-  <p class="block-intro" style="margin-top:0;">
-    [One paragraph on your group's research focus and philosophy — what
-    problems you work on, and what kind of student thrives in the group.]
-  </p>
+  <div class="page-head">
+    <h1>Research</h1>
+    <p class="page-intro">
+      My research spans extreme value theory, spatio-temporal modeling, Bayesian computing, data science, and environmetrics,
+      with applications to natural hazards such as landslides, wildfires, and precipitation extremes.
+    </p>
+  </div>
 
-  <!-- Optional group photo. Delete this whole <figure> if you don't have one yet. -->
-  <figure class="photo-frame">
-    <img src="images/group-photo.jpg" alt="Research group photo">
-    <figcaption>[Caption, e.g. "The group, Winter 2026"]</figcaption>
-  </figure>
-
-  <!-- PhD Students -->
-<<<<<<< HEAD
+  <!-- ============================================================
+       1. PhD STUDENTS
+       ============================================================ -->
   <section class="block">
     <div class="block-head">
       <h2>PhD Students</h2>
-      <span class="block-count">group · 06</span>
+      <span class="block-count">group &middot; 06</span>
     </div>
 
     <div class="student-grid">
 
-      <!-- Student 01 -->
       <div class="student-card">
-        <img class="student-photo" src="images/students/Indrajeet.png" alt="Indrajeet Kumar">
+        <img class="student-photo" src="assets/images/students/indrajeet.png" alt="Indrajeet Kumar">
         <div class="student-info">
-          <div class="entry-id">PHD·01</div>
+          <div class="entry-id">PHD&middot;01</div>
           <p class="entry-title">Indrajeet Kumar</p>
-          <p class="entry-meta">PhD, December 2025–present</p>
-          <p class="entry-desc">Working on Spatiotemporal Dynamics and Climate Risk in Indian Agriculture.</p>
+          <p class="entry-meta">PhD, December 2025&ndash;present</p>
+          <p class="entry-desc">Working on spatiotemporal dynamics and climate risk in Indian agriculture.</p>
         </div>
       </div>
-
-      <!-- Student 02 -->
       <div class="student-card">
-        <img class="student-photo" src="images/students/phd-02.jpg" alt="[Student Name]">
+        <img class="student-photo" src="assets/images/students/somnath.jpeg" alt="Somnath Giri">
         <div class="student-info">
-          <div class="entry-id">PHD·02</div>
-          <p class="entry-title">[Student Name]</p>
-          <p class="entry-meta">PhD, [Month Year]–present</p>
-          <p class="entry-desc">Working on [thesis topic / project title].</p>
+          <div class="entry-id">PHD&middot;02</div>
+          <p class="entry-title">Somnath Giri</p>
+          <p class="entry-meta">PhD, [Month Year]&ndash;present</p>
+          <p class="entry-desc">Working on [thesis topic].</p>
         </div>
-=======
-<section class="block">
-  <div class="block-head">
-    <h2>PhD Students</h2>
-    <span class="block-count">group · 06</span>
-  </div>
-
-  <div class="student-grid">
-
-    <!-- Student 01 -->
-    <div class="student-card">
-      <img class="student-photo"
-           src="images/students/Indrajeet.png"
-           alt="Indrajeet Kumar">
-
-      <div class="student-info">
-        <div class="entry-id">PHD·01</div>
-        <p class="entry-title">Indrajeet Kumar</p>
-        <p class="entry-meta">PhD, December 2025–present</p>
-        <p class="entry-desc">
-          Working on Spatiotemporal Dynamics and Climate Risk in Indian Agriculture.
-        </p>
->>>>>>> f0da28ae17c1e0bcf0be81cfe6b199b0224ab0a9
       </div>
-
-      <!-- Student 03 -->
       <div class="student-card">
-        <img class="student-photo" src="images/students/phd-03.jpg" alt="[Student Name]">
+        <img class="student-photo" src="assets/images/students/vipin.jpeg" alt="Vipin Singh">
         <div class="student-info">
-          <div class="entry-id">PHD·03</div>
-          <p class="entry-title">[Student Name]</p>
-          <p class="entry-meta">PhD, [Month Year]–present</p>
-          <p class="entry-desc">Working on [thesis topic / project title].</p>
+          <div class="entry-id">PHD&middot;03</div>
+          <p class="entry-title">Vipin Singh</p>
+          <p class="entry-meta">PhD, [Month Year]&ndash;present</p>
+          <p class="entry-desc">Working on [thesis topic].</p>
         </div>
       </div>
-
-      <!-- Student 04 -->
       <div class="student-card">
-        <img class="student-photo" src="images/students/phd-04.jpg" alt="[Student Name]">
+        <img class="student-photo" src="assets/images/students/placeholder.svg" alt="Vedant Vibhor">
         <div class="student-info">
-          <div class="entry-id">PHD·04</div>
-          <p class="entry-title">[Student Name]</p>
-          <p class="entry-meta">PhD, [Month Year]–present</p>
-          <p class="entry-desc">Working on [thesis topic / project title].</p>
+          <div class="entry-id">PHD&middot;04</div>
+          <p class="entry-title">Vedant Vibhor</p>
+          <p class="entry-meta">PhD, [Month Year]&ndash;present</p>
+          <p class="entry-desc">Working on [thesis topic].</p>
         </div>
       </div>
-
-      <!-- Student 05 -->
       <div class="student-card">
-        <img class="student-photo" src="images/students/phd-05.jpg" alt="[Student Name]">
+        <img class="student-photo" src="assets/images/students/prashant.jpeg" alt="Prashant [Surname]">
         <div class="student-info">
-          <div class="entry-id">PHD·05</div>
-          <p class="entry-title">[Student Name]</p>
-          <p class="entry-meta">PhD, [Month Year]–present</p>
-          <p class="entry-desc">Working on [thesis topic / project title].</p>
+          <div class="entry-id">PHD&middot;05</div>
+          <p class="entry-title">Prashant [Surname]</p>
+          <p class="entry-meta">PhD, [Month Year]&ndash;present</p>
+          <p class="entry-desc">Working on [thesis topic].</p>
         </div>
       </div>
-
-      <!-- Student 06 -->
       <div class="student-card">
-        <img class="student-photo" src="images/students/phd-06.jpg" alt="[Student Name]">
+        <img class="student-photo" src="assets/images/students/khushi.jpeg" alt="Khushi [Surname]">
         <div class="student-info">
-          <div class="entry-id">PHD·06</div>
-          <p class="entry-title">[Student Name]</p>
-          <p class="entry-meta">PhD, [Month Year]–present</p>
-          <p class="entry-desc">Working on [thesis topic / project title].</p>
+          <div class="entry-id">PHD&middot;06</div>
+          <p class="entry-title">Khushi [Surname]</p>
+          <p class="entry-meta">PhD, [Month Year]&ndash;present</p>
+          <p class="entry-desc">Working on [thesis topic].</p>
         </div>
       </div>
 
     </div>
+  </section>
 
-    <!-- Student 02 -->
-    <div class="student-card">
-      <img class="student-photo"
-           src="images/students/Indrajeet.png"
-           alt="Indrajeet Kumar">
-
-      <div class="student-info">
-        <div class="entry-id">PHD·02</div>
-        <p class="entry-title">Indrajeet Kumar</p>
-        <p class="entry-meta">PhD, December 2025–present</p>
-        <p class="entry-desc">
-          Working on Spatiotemporal Dynamics and Climate Risk in Indian Agriculture.
-        </p>
-      </div>
-    </div>
-
-    <!-- Student 03 -->
-    <div class="student-card">
-      <img class="student-photo"
-           src="images/students/Indrajeet.png"
-           alt="Indrajeet Kumar">
-
-      <div class="student-info">
-        <div class="entry-id">PHD·03</div>
-        <p class="entry-title">Indrajeet Kumar</p>
-        <p class="entry-meta">PhD, December 2025–present</p>
-        <p class="entry-desc">
-          Working on Spatiotemporal Dynamics and Climate Risk in Indian Agriculture.
-        </p>
-      </div>
-    </div>
-
-    <!-- Student 04 -->
-    <div class="student-card">
-      <img class="student-photo"
-           src="images/students/Indrajeet.png"
-           alt="Indrajeet Kumar">
-
-      <div class="student-info">
-        <div class="entry-id">PHD·04</div>
-        <p class="entry-title">Indrajeet Kumar</p>
-        <p class="entry-meta">PhD, December 2025–present</p>
-        <p class="entry-desc">
-          Working on Spatiotemporal Dynamics and Climate Risk in Indian Agriculture.
-        </p>
-      </div>
-    </div>
-
-    <!-- Student 05 -->
-    <div class="student-card">
-      <img class="student-photo"
-           src="images/students/Indrajeet.png"
-           alt="Indrajeet Kumar">
-
-      <div class="student-info">
-        <div class="entry-id">PHD·05</div>
-        <p class="entry-title">Indrajeet Kumar</p>
-        <p class="entry-meta">PhD, December 2025–present</p>
-        <p class="entry-desc">
-          Working on Spatiotemporal Dynamics and Climate Risk in Indian Agriculture.
-        </p>
-      </div>
-    </div>
-
-    <!-- Student 06 -->
-    <div class="student-card">
-      <img class="student-photo"
-           src="images/students/Indrajeet.png"
-           alt="Indrajeet Kumar">
-
-      <div class="student-info">
-        <div class="entry-id">PHD·06</div>
-        <p class="entry-title">Indrajeet Kumar</p>
-        <p class="entry-meta">PhD, December 2025–present</p>
-        <p class="entry-desc">
-          Working on Spatiotemporal Dynamics and Climate Risk in Indian Agriculture.
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-  <!-- MSc Students -->
+  <!-- ============================================================
+       2. MASTERS & BTECH STUDENTS
+       ============================================================ -->
   <section class="block">
     <div class="block-head">
-      <h2>MSc Students</h2>
-      <span class="block-count">group</span>
+      <h2>Masters &amp; BTech Students</h2>
+      <span class="block-count">group &middot; 04</span>
     </div>
+
+    <div class="student-grid">
+
+      <div class="student-card">
+        <img class="student-photo" src="assets/images/students/Divyansh.jpeg" alt="Divyansh [Surname]">
+        <div class="student-info">
+          <div class="entry-id">MEM&middot;01</div>
+          <p class="entry-title">Divyansh [Surname]</p>
+          <p class="entry-meta">[MSc / BTech Project], [Year]</p>
+          <p class="entry-desc">[Thesis / project title].</p>
+        </div>
+      </div>
+      <div class="student-card">
+        <img class="student-photo" src="assets/images/students/anamika.jpeg" alt="Anamika [Surname]">
+        <div class="student-info">
+          <div class="entry-id">MEM&middot;02</div>
+          <p class="entry-title">Anamika [Surname]</p>
+          <p class="entry-meta">[MSc / BTech Project], [Year]</p>
+          <p class="entry-desc">[Thesis / project title].</p>
+        </div>
+      </div>
+      <div class="student-card">
+        <img class="student-photo" src="assets/images/students/debolina.jpeg" alt="Debolina [Surname]">
+        <div class="student-info">
+          <div class="entry-id">MEM&middot;03</div>
+          <p class="entry-title">Debolina [Surname]</p>
+          <p class="entry-meta">[MSc / BTech Project], [Year]</p>
+          <p class="entry-desc">[Thesis / project title].</p>
+        </div>
+      </div>
+      <div class="student-card">
+        <img class="student-photo" src="assets/images/students/nishita.jpeg" alt="Nishita [Surname]">
+        <div class="student-info">
+          <div class="entry-id">MEM&middot;04</div>
+          <p class="entry-title">Nishita [Surname]</p>
+          <p class="entry-meta">[MSc / BTech Project], [Year]</p>
+          <p class="entry-desc">[Thesis / project title].</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3. PACKAGES AND TOOLS
+       ============================================================ -->
+  <section class="block">
+    <div class="block-head">
+      <h2>Packages and Tools</h2>
+      <span class="block-count">software</span>
+    </div>
+
     <div class="catalog">
-      <div class="entry entry-with-photo">
-        <img class="entry-photo" src="images/students/msc-01.jpg" alt="[Student Name]">
-        <div class="entry-id">MSC·01</div>
+
+      <div class="entry">
+        <div class="entry-id">PKG&middot;01</div>
         <div>
-          <p class="entry-title">[Student Name]</p>
-          <p class="entry-meta">MSc, 2025–present</p>
-          <p class="entry-desc">Thesis: [short project title].</p>
+          <p class="entry-title">JM.landslide</p>
+          <p class="entry-meta">R package</p>
+          <p class="entry-desc">Joint modelling of landslide counts and sizes using a sub-asymptotic landslide size distribution. Accompanies Yadav et al. (2023, JRSSC) and the CRC Press book chapter on statistics of extremes for natural hazards.</p>
+          <p class="entry-links"><a href="https://github.com/yadavrishikesh/JM.landslide">code</a><a href="https://yadavrishikesh.github.io/JM.landslide/JM.landslide.html">vignette</a><a href="https://doi.org/10.1093/jrsssc/qlad077">paper</a></p>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- BTech project students -->
+  <!-- ============================================================
+       4. MANUSCRIPTS IN PREPARATION
+       ============================================================ -->
   <section class="block">
     <div class="block-head">
-      <h2>BTech Project Students</h2>
-      <span class="block-count">group</span>
+      <h2>Manuscripts in Preparation</h2>
+      <span class="block-count">in progress</span>
     </div>
+
     <div class="catalog">
-      <div class="entry entry-with-photo">
-        <img class="entry-photo" src="images/students/btp-01.jpg" alt="[Student Name]">
-        <div class="entry-id">BTP·01</div>
+
+      <div class="entry">
+        <div class="entry-id">PREP&middot;01</div>
         <div>
-          <p class="entry-title">[Student Name]</p>
-          <p class="entry-meta">BTech Project, Spring 2026</p>
-          <p class="entry-desc">Project: [short project title].</p>
+          <p class="entry-title">Bayesian modeling of sparse conditional spatial extremes processes subject to left-censoring</p>
+          <p class="entry-meta">L&eacute;o R. Belzile, Rishikesh Yadav, and Nicholas R. Beck <span class="tag tag-progress">In prep</span></p>
         </div>
       </div>
-      <div class="entry entry-with-photo">
-        <img class="entry-photo" src="images/students/btp-02.jpg" alt="[Student Name]">
-        <div class="entry-id">BTP·02</div>
+      <div class="entry">
+        <div class="entry-id">PREP&middot;02</div>
         <div>
-          <p class="entry-title">[Student Name]</p>
-          <p class="entry-meta">BTech Project, Spring 2026</p>
-          <p class="entry-desc">Project: [short project title].</p>
+          <p class="entry-title">Joint modeling of Wenchuan landslide counts and sizes using multivariate SPDE approach</p>
+          <p class="entry-meta">Rishikesh Yadav, Rapha&euml;l Huser, Thomas Opitz, L&eacute;o R. Belzile, Luigi Lombardo, and Hakan Tanyas <span class="tag tag-progress">In prep</span></p>
         </div>
       </div>
+      <div class="entry">
+        <div class="entry-id">PREP&middot;03</div>
+        <div>
+          <p class="entry-title">Optimizing bike networks of sensors on Montreal Island: A spatiotemporal Bayesian modeling framework</p>
+          <p class="entry-meta">Rishikesh Yadav, Alexandra M. Schmidt, Aur&eacute;lie Labbe, and Pratheepa Jeganathan <span class="tag tag-progress">In prep</span></p>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- Alumni -->
+  <!-- ============================================================
+       5. MANUSCRIPTS SUBMITTED
+       ============================================================ -->
   <section class="block">
     <div class="block-head">
-      <h2>Alumni</h2>
-      <span class="block-count">where they are now</span>
+      <h2>Manuscripts Submitted</h2>
+      <span class="block-count">under review</span>
     </div>
-    <ul class="simple-list">
-      <li><span class="who"><img class="avatar-sm" src="images/students/alumni-01.jpg" alt="">[Student Name] — PhD, 2020–2025</span><span class="where">Postdoc, [University]</span></li>
-      <li><span class="who"><img class="avatar-sm" src="images/students/alumni-02.jpg" alt="">[Student Name] — MSc, 2023–2025</span><span class="where">SDE, [Company]</span></li>
-      <li><span class="who"><img class="avatar-sm" src="images/students/alumni-03.jpg" alt="">[Student Name] — BTech Project, 2024</span><span class="where">MS student, [University]</span></li>
-    </ul>
+
+    <div class="catalog">
+
+      <div class="entry">
+        <div class="entry-id">SUB&middot;01</div>
+        <div>
+          <p class="entry-title">Regression modelling of multivariate precipitation extremes under regular variation</p>
+          <p class="entry-meta">Rishikesh Yadav and Arnab Hazra &middot; Under consideration in <em>Extremes</em>, 2026 <span class="tag tag-submitted">Under review</span></p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">SUB&middot;02</div>
+        <div>
+          <p class="entry-title">Scalable spatiotemporal modeling for bicycle count prediction</p>
+          <p class="entry-meta">Rishikesh Yadav, Alexandra M. Schmidt, Aur&eacute;lie Labbe, Pratheepa Jeganathan, and Luis F. Miranda-Moreno &middot; 2025 <span class="tag tag-submitted">Preprint</span></p>
+          <p class="entry-links"><a href="https://arxiv.org/abs/2506.07582">arXiv</a></p>
+        </div>
+      </div>
+
+    </div>
   </section>
 
-  <!-- Publications -->
+  <!-- ============================================================
+       6. PUBLISHED MANUSCRIPTS
+       ============================================================ -->
   <section class="block">
     <div class="block-head">
       <h2>Published Manuscripts</h2>
       <span class="block-count">publications</span>
     </div>
+
+    <p class="block-intro">* Equal contribution. &dagger; Contributed to three of the four sub-tasks.</p>
+
     <div class="catalog">
+
       <div class="entry">
-        <div class="entry-id">PUB·2026·01</div>
+        <div class="entry-id">PUB&middot;2025&middot;01</div>
         <div>
-          <p class="entry-title">[Paper title]</p>
-          <p class="entry-meta">[Author list] · [Journal / Conference name], [Year] <span class="tag tag-published">Published</span></p>
-          <p class="entry-links"><a href="#">pdf</a><a href="#">doi</a><a href="#">code</a></p>
+          <p class="entry-title">An utopic adventure in the modeling of conditional univariate and multivariate extremes</p>
+          <p class="entry-meta">L&eacute;o R. Belzile, Arnab Hazra, and Rishikesh Yadav<sup>&dagger;</sup> &middot; <em>Extremes</em>, 2025 <span class="tag tag-published">Published</span></p>
+          <p class="entry-links"><a href="https://link.springer.com/article/10.1007/s10687-024-00493-1">doi</a></p>
         </div>
       </div>
       <div class="entry">
-        <div class="entry-id">PUB·2025·04</div>
+        <div class="entry-id">PUB&middot;2025&middot;02</div>
         <div>
-          <p class="entry-title">[Paper title]</p>
-          <p class="entry-meta">[Author list] · [Journal / Conference name], [Year] <span class="tag tag-published">Published</span></p>
-          <p class="entry-links"><a href="#">pdf</a><a href="#">doi</a></p>
+          <p class="entry-title">Exploring the efficacy of statistical and deep learning methods for large spatial datasets: A case study</p>
+          <p class="entry-meta">Arnab Hazra*, Pratik Nag*, Rishikesh Yadav*, and Ying Sun &middot; <em>Journal of Agricultural, Biological and Environmental Statistics</em>, 2025 <span class="tag tag-published">Published</span></p>
+          <p class="entry-links"><a href="https://doi.org/10.1007/s13253-024-00602-4">doi</a></p>
         </div>
       </div>
+      <div class="entry">
+        <div class="entry-id">PUB&middot;2025&middot;03</div>
+        <div>
+          <p class="entry-title">Statistics of extremes for natural hazards: landslides and earthquakes</p>
+          <p class="entry-meta">Rishikesh Yadav, Rapha&euml;l Huser, and Luigi Lombardo &middot; Book chapter, CRC Press, 2025 <span class="tag tag-published">Book chapter</span></p>
+          <p class="entry-links"><a href="https://arxiv.org/abs/2404.09156">arXiv</a><a href="https://github.com/yadavrishikesh/JM.landslide">code</a></p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">PUB&middot;2023&middot;01</div>
+        <div>
+          <p class="entry-title">Joint modeling of landslide counts and sizes using spatial marked point processes with sub-asymptotic mark distributions</p>
+          <p class="entry-meta">Rishikesh Yadav, Rapha&euml;l Huser, Thomas Opitz, and Luigi Lombardo &middot; <em>Journal of the Royal Statistical Society Series C: Applied Statistics</em>, qlad077, 2023 <span class="tag tag-published">Published</span></p>
+          <p class="entry-links"><a href="https://doi.org/10.1093/jrsssc/qlad077">doi</a><a href="https://github.com/yadavrishikesh/JM.landslide">code</a></p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">PUB&middot;2022&middot;01</div>
+        <div>
+          <p class="entry-title">A flexible Bayesian hierarchical modeling framework for spatially dependent peaks-over-threshold data</p>
+          <p class="entry-meta">Rishikesh Yadav, Rapha&euml;l Huser, and Thomas Opitz &middot; <em>Spatial Statistics</em> 51, 100672, 2022 <span class="tag tag-published">Published</span></p>
+          <p class="entry-links"><a href="https://doi.org/10.1016/j.spasta.2022.100672">doi</a></p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">PUB&middot;2022&middot;02</div>
+        <div>
+          <p class="entry-title">A combined statistical and machine learning approach for spatial prediction of extreme wildfire frequencies and sizes</p>
+          <p class="entry-meta">Daniela Cisneros*, Yan Gong*, Rishikesh Yadav*, Arnab Hazra, and Rapha&euml;l Huser &middot; <em>Extremes</em>, 1&ndash;30, 2022 <span class="tag tag-published">Published</span></p>
+          <p class="entry-links"><a href="https://doi.org/10.1007/s10687-022-00460-8">doi</a></p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">PUB&middot;2021&middot;01</div>
+        <div>
+          <p class="entry-title">Spatial hierarchical modeling of threshold exceedances using rate mixtures</p>
+          <p class="entry-meta">Rishikesh Yadav, Rapha&euml;l Huser, and Thomas Opitz &middot; <em>Environmetrics</em> 32(3), e2662, 2021 <span class="tag tag-published">Published</span></p>
+          <p class="entry-links"><a href="https://doi.org/10.1002/env.2662">doi</a></p>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- Submitted -->
+  <!-- ============================================================
+       7. REVIEWING
+       ============================================================ -->
   <section class="block">
     <div class="block-head">
-      <h2>Submitted / Under Review</h2>
-      <span class="block-count">manuscripts</span>
+      <h2>Reviewer</h2>
+      <span class="block-count">service</span>
     </div>
+
     <div class="catalog">
+
       <div class="entry">
-        <div class="entry-id">SUB·2026·01</div>
+        <div class="entry-id">REV&middot;01</div>
         <div>
-          <p class="entry-title">[Paper title]</p>
-          <p class="entry-meta">[Author list] · Submitted to [Venue] <span class="tag tag-submitted">Under review</span></p>
-          <p class="entry-links"><a href="#">preprint</a></p>
+          <p class="entry-title"><em>Spatial Statistics</em></p>
+          <p class="entry-meta">Journal</p>
         </div>
       </div>
+      <div class="entry">
+        <div class="entry-id">REV&middot;02</div>
+        <div>
+          <p class="entry-title"><em>Extremes</em></p>
+          <p class="entry-meta">Journal</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">REV&middot;03</div>
+        <div>
+          <p class="entry-title"><em>Computo</em></p>
+          <p class="entry-meta">Journal</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">REV&middot;04</div>
+        <div>
+          <p class="entry-title"><em>Handbook of Statistics of Extremes</em></p>
+          <p class="entry-meta">Book chapter review</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
 </main>
 
+<!-- ============================================================
+     SITE FOOTER
+     Identical on all five pages.
+     ============================================================ -->
 <footer class="site-footer container">
-  <p>Rishikesh Yadav · Assistant Professor · IIT Mandi, Himachal Pradesh · <a href="mailto:rishikesh@iitmandi.ac.in">rishikesh@iitmandi.ac.in</a></p>
+  <p>Rishikesh Yadav &middot; Assistant Professor &middot; IIT Mandi, Himachal Pradesh &middot; <a href="mailto:rishikesh@iitmandi.ac.in">rishikesh@iitmandi.ac.in</a></p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>

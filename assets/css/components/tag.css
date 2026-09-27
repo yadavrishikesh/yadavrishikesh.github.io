@@ -1,0 +1,38 @@
+/* ============================================================
+   COMPONENT / TAG
+   ------------------------------------------------------------
+   Small status pill, normally placed inside an .entry-meta
+   line to mark a manuscript's stage.
+
+     <span class="tag tag-published">Published</span>
+     <span class="tag tag-submitted">Under review</span>
+     <span class="tag tag-progress">In prep</span>
+
+   To add a new status: add a --tag-*-bg token in
+   base/tokens.css, then one .tag-* rule here.
+   ============================================================ */
+
+.tag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.03em;
+  padding: 2px 8px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.tag-published {
+  background: var(--tag-published-bg);
+  color: var(--pine-dark);
+}
+
+.tag-submitted {
+  background: var(--tag-submitted-bg);
+  color: var(--gold);
+}
+
+.tag-progress {
+  background: var(--tag-progress-bg);
+  color: var(--slate);
+}

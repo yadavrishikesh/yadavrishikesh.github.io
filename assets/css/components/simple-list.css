@@ -1,0 +1,63 @@
+/* ============================================================
+   COMPONENT / SIMPLE LIST
+   ------------------------------------------------------------
+   Two-column list: a label on the left, a value on the right,
+   separated by hairlines. Good for "Alumni — where they are
+   now" style sections.
+
+     <ul class="simple-list">
+       <li>
+         <span class="who">
+           <img class="avatar-sm" src="..." alt="">
+           Name - PhD, 2020-2025
+         </span>
+         <span class="where">Postdoc, University</span>
+       </li>
+     </ul>
+
+   .avatar-sm is optional — omit the <img> for a text-only row.
+   ============================================================ */
+
+.simple-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.simple-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--rule-soft);
+  font-size: 15.5px;
+}
+
+.simple-list li:last-child {
+  border-bottom: none;
+}
+
+.simple-list .who {
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+}
+
+.simple-list .where {
+  color: var(--ink-faint);
+  font-family: var(--mono);
+  font-size: 13.5px;
+  text-align: right;
+}
+
+/* Small round photo used next to a name in a list. */
+.avatar-sm {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  background: var(--rule-soft);
+  margin-right: 10px;
+  vertical-align: middle;
+}

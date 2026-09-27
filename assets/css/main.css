@@ -1,0 +1,58 @@
+/* ============================================================
+   MAIN.CSS — the only stylesheet the HTML pages link to
+   ============================================================
+
+   Every page contains exactly one line:
+
+     <link rel="stylesheet" href="assets/css/main.css">
+
+   This file contains no styles of its own. It just pulls in the
+   real stylesheets, in the one order that matters:
+
+     1. base       tokens, reset, default type
+     2. layout     the page frame: container, header, footer, sections
+     3. components reusable pieces: cards, galleries, tags
+     4. pages      the few rules specific to one kind of page
+
+   Later files can override earlier ones, so keep this order.
+   If two rules ever fight, the one further down this list wins.
+
+   ADDING A NEW STYLESHEET
+   -----------------------
+   1. Create the file in the folder it belongs to.
+   2. Add one @import line below, in the right group.
+   All @import lines must stay at the very top of this file —
+   that is a CSS rule, not a style choice.
+
+   NOTE ON PERFORMANCE
+   -------------------
+   @import makes the browser fetch these files one after another.
+   For a site this size that is a few milliseconds and not worth
+   optimising. If the site ever grows large enough to care,
+   concatenate these files into one at deploy time; nothing in
+   the HTML would need to change.
+   ============================================================ */
+
+/* ---- 1. Base --------------------------------------------- */
+@import url("base/tokens.css");
+@import url("base/reset.css");
+@import url("base/typography.css");
+
+/* ---- 2. Layout ------------------------------------------- */
+@import url("layout/container.css");
+@import url("layout/site-header.css");
+@import url("layout/site-footer.css");
+@import url("layout/block.css");
+
+/* ---- 3. Components --------------------------------------- */
+@import url("components/hero.css");
+@import url("components/entry.css");
+@import url("components/student-card.css");
+@import url("components/tag.css");
+@import url("components/gallery.css");
+@import url("components/photo-frame.css");
+@import url("components/simple-list.css");
+@import url("components/edit-note.css");
+
+/* ---- 4. Pages -------------------------------------------- */
+@import url("pages/page-head.css");

@@ -1,0 +1,39 @@
+/* ============================================================
+   COMPONENT / PHOTO FRAME
+   ------------------------------------------------------------
+   One standalone captioned photo. Drop it anywhere inside
+   <main> on any page.
+
+     <figure class="photo-frame">
+       <img src="..." alt="What the photo shows">
+       <figcaption>Caption</figcaption>
+     </figure>
+
+   Add the .small modifier for a narrower (340px) version:
+
+     <figure class="photo-frame small"> ... </figure>
+   ============================================================ */
+
+.photo-frame {
+  margin: 28px 0;
+}
+
+.photo-frame img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--rule);
+  background: var(--rule-soft);
+  display: block;
+}
+
+.photo-frame figcaption {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-faint);
+  margin-top: 8px;
+}
+
+/* Modifier: narrower, left-aligned. */
+.photo-frame.small {
+  max-width: 340px;
+}

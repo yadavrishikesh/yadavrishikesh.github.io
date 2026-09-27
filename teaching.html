@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Teaching — [Your Name]</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Teaching — Rishikesh Yadav</title>
+  <meta name="description" content="Courses taught at IIT Mandi, listed by semester.">
+
+  <!-- Fonts. Swap these out in every page if you change the type stack. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- All styles. main.css imports every other stylesheet (see assets/css/main.css). -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Behaviour: mobile menu + active nav link. Safe to defer. -->
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
 
+<!-- ============================================================
+     SITE HEADER
+     Identical on all five pages. If you edit it, copy the change
+     into every .html file. The only difference between pages is
+     which link carries aria-current="page".
+     ============================================================ -->
 <header class="site-header">
   <div class="nav-wrap">
     <a class="brand" href="index.html">
-      <span class="brand-mark">IITM</span>
-      <span class="brand-name">[Your Name]</span>
+      <span class="brand-mark">IITMandi</span>
+      <span class="brand-name">Rishikesh Yadav</span>
     </a>
+
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+
     <nav class="primary-nav" id="primary-nav">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
@@ -27,74 +45,139 @@
   </div>
 </header>
 
-<main class="container" style="padding-top:48px;">
+<main class="page container">
 
-  <div class="edit-note">Everything in brackets below is a placeholder — replace with your own courses, then delete this note.</div>
+  <div class="page-head">
+    <h1>Teaching</h1>
+    <p class="page-intro">Courses at IIT Mandi, short courses and masterclasses, and slides on key topics. The Deep Learning Reading Group is on the <a href="reading-group.html">Reading Group</a> page.</p>
+  </div>
 
-  <h1 style="margin-bottom:6px;">Teaching</h1>
-  <p class="block-intro" style="margin-top:0;">
-    [Optional one-line teaching philosophy or note about your courses.]
-  </p>
-
-  <!-- Optional photo — delete this <figure> if you don't want one here.
-       Copy/paste this same block anywhere on this page to add another photo. -->
-  <figure class="photo-frame small">
-    <img src="images/classroom.jpg" alt="[Caption]">
-    <figcaption>[Caption, e.g. "Teaching CS101, Autumn 2025"]</figcaption>
-  </figure>
-
+  <!-- ============================================================
+       One .block per semester, newest first.
+       ============================================================ -->
   <section class="block">
     <div class="block-head">
-      <h2>2026 — Spring</h2>
+      <h2>2026 &mdash; Spring</h2>
     </div>
+
     <div class="catalog">
-      <div class="entry entry-with-thumb">
-        <img class="entry-thumb" src="images/courses/crs-01.jpg" alt="[Course Name]">
-        <div class="entry-id">CRS·01</div>
+
+      <div class="entry">
+        <div class="entry-id">CRS&middot;02</div>
         <div>
-          <p class="entry-title">[Course Code] — [Course Name]</p>
-          <p class="entry-meta">[UG / PG] · [Credits]</p>
-          <p class="entry-desc">[One-line description of the course.]</p>
-          <p class="entry-links"><a href="#">syllabus</a><a href="#">slides</a></p>
+          <p class="entry-title">MA524 &mdash; Probability and Statistics</p>
+          <p class="entry-meta">PG (Master&rsquo;s / PhD) &middot; IIT Mandi &middot; Instructor</p>
         </div>
       </div>
+
     </div>
   </section>
 
   <section class="block">
     <div class="block-head">
-      <h2>2025 — Autumn</h2>
+      <h2>2025 &mdash; Spring</h2>
     </div>
+
     <div class="catalog">
-      <div class="entry entry-with-thumb">
-        <img class="entry-thumb" src="images/courses/crs-02.jpg" alt="[Course Name]">
-        <div class="entry-id">CRS·02</div>
+
+      <div class="entry">
+        <div class="entry-id">CRS&middot;01</div>
         <div>
-          <p class="entry-title">[Course Code] — [Course Name]</p>
-          <p class="entry-meta">[UG / PG] · [Credits]</p>
-          <p class="entry-desc">[One-line description of the course.]</p>
-          <p class="entry-links"><a href="#">syllabus</a></p>
+          <p class="entry-title">MA524 &mdash; Probability and Statistics</p>
+          <p class="entry-meta">PG (Master&rsquo;s / PhD) &middot; IIT Mandi &middot; Instructor</p>
         </div>
       </div>
-      <div class="entry entry-with-thumb">
-        <img class="entry-thumb" src="images/courses/crs-03.jpg" alt="[Course Name]">
-        <div class="entry-id">CRS·03</div>
-        <div>
-          <p class="entry-title">[Course Code] — [Course Name]</p>
-          <p class="entry-meta">[UG / PG] · [Credits]</p>
-          <p class="entry-desc">[One-line description of the course.]</p>
-          <p class="entry-links"><a href="#">syllabus</a></p>
-        </div>
-      </div>
+
     </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <h2>Short Courses &amp; Masterclasses</h2>
+      <span class="block-count">workshops</span>
+    </div>
+
+    <div class="catalog">
+
+      <div class="entry">
+        <div class="entry-id">SHC&middot;01</div>
+        <div>
+          <p class="entry-title">Intro to Predictive Modeling &mdash; Masterclass in Statistical Data Analytics and Deep Learning</p>
+          <p class="entry-meta">IIT Mandi &middot; 23&ndash;27 June 2025 &middot; Instructor</p>
+          <p class="entry-desc">Predictive modeling, neural networks, RNNs, and LSTMs.</p>
+          <p class="entry-links"><a href="https://github.com/yadavrishikesh/Masterclass-IITMandi/tree/main/Module3">module 3: predictive modeling</a><a href="https://github.com/yadavrishikesh/Masterclass-IITMandi/tree/main/Module4">module 4: deep learning</a></p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">SHC&middot;02</div>
+        <div>
+          <p class="entry-title">Introduction to Neural Networks</p>
+          <p class="entry-meta">University of Allahabad &middot; 8 August 2024 &middot; Instructor</p>
+          <p class="entry-links"><a href="https://github.com/yadavrishikesh/Into-NNs/blob/main/slides/NNs.pdf">slides</a><a href="https://github.com/yadavrishikesh/Into-NNs/tree/main/code/code-NNs">R code</a><a href="https://drive.google.com/file/d/1dR8KEeOfhAvRDh7g576NdCNjSddphvQy/view?usp=sharing">slides (drive)</a><a href="https://drive.google.com/drive/folders/1YsVuNDuyFx_Er20NPciM6QA0tzRp8_yB?usp=sharing">R code (drive)</a></p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">SHC&middot;03</div>
+        <div>
+          <p class="entry-title">Introduction to Extreme Value Theory</p>
+          <p class="entry-meta">University of Allahabad &middot; 7 August 2024 &middot; Instructor</p>
+          <p class="entry-links"><a href="https://github.com/yadavrishikesh/Intro-EVT/blob/main/slides/EVT.pdf">slides</a><a href="https://github.com/yadavrishikesh/Intro-EVT/tree/main/code">R code</a><a href="https://drive.google.com/file/d/1IRTHmbONUyULPXtav3QB-CCJPWdApXkj/view?usp=sharing">slides (drive)</a><a href="https://drive.google.com/drive/folders/1UGc5lN2hOjoDGvyFj2et98d8A_EfjCZ5?usp=sharing">R code (drive)</a></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <h2>Teaching Slides on Key Topics</h2>
+      <span class="block-count">slides</span>
+    </div>
+
+    <div class="catalog">
+
+      <div class="entry">
+        <div class="entry-id">SLD&middot;01</div>
+        <div>
+          <p class="entry-title">Metropolis&ndash;Hastings Algorithm</p>
+          <p class="entry-links"><a href="https://drive.google.com/file/d/1LqG0YAmmgK7WCDiljQp-25_HvB5uQi2v/view?usp=drive_link">slides</a></p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">SLD&middot;02</div>
+        <div>
+          <p class="entry-title">Cross-Validation</p>
+          <p class="entry-links"><a href="https://drive.google.com/file/d/1Nilh7WotTLzlblePaxjVnK7EjXVwtVDX/view?usp=drive_link">slides</a></p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-id">SLD&middot;03</div>
+        <div>
+          <p class="entry-title">An Introduction to Linear Regression</p>
+          <p class="entry-links"><a href="https://drive.google.com/file/d/1X88vKmo0s2JP4CMV_9mB1xntFg0rPkrc/view?usp=drive_link">slides</a></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <h2>Key Master&rsquo;s and PhD Courses</h2>
+    </div>
+
+    <p class="block-text">Statistics of Extremes (STAT 380) &middot; Spatial Statistics (STAT 370) &middot; Bayesian Statistics (STAT 240) &middot; Computational Statistics (STAT 340) &middot; Contemporary Topics in Computational Science (AMCS 394E) &middot; Machine Learning (CS 229) &middot; Data Mining and Pattern Recognition &middot; Nonparametric Statistics &middot; Functional Data Analysis &middot; Advanced Inference &middot; Linear Models</p>
   </section>
 
 </main>
 
+<!-- ============================================================
+     SITE FOOTER
+     Identical on all five pages.
+     ============================================================ -->
 <footer class="site-footer container">
-  <p>[Your Name] · Assistant Professor · IIT Mandi, Himachal Pradesh · <a href="mailto:yourname@iitmandi.ac.in">yourname@iitmandi.ac.in</a></p>
+  <p>Rishikesh Yadav &middot; Assistant Professor &middot; IIT Mandi, Himachal Pradesh &middot; <a href="mailto:rishikesh@iitmandi.ac.in">rishikesh@iitmandi.ac.in</a></p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,22 @@
+/* ============================================================
+   COMPONENT / EDIT NOTE
+   ------------------------------------------------------------
+   The dashed yellow reminder box at the top of a page that
+   still contains [bracketed] placeholder text.
+
+     <div class="edit-note">... reminder text ...</div>
+
+   Delete the <div> from a page once that page's real content
+   is in place.
+   ============================================================ */
+
+.edit-note {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--gold);
+  background: #f8f2e2;
+  border: 1px dashed #d8c185;
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  margin-bottom: var(--space-md);
+}

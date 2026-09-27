@@ -1,0 +1,65 @@
+/* ============================================================
+   LAYOUT / BLOCK
+   ------------------------------------------------------------
+   A "block" is one titled section of a page — "PhD Students",
+   "Recent updates", "Sessions", and so on. Blocks are separated
+   by a hairline rule; the last one on a page has none.
+
+   Standard markup:
+
+     <section class="block">
+       <div class="block-head">
+         <h2>Section title</h2>
+         <span class="block-count">optional label</span>
+       </div>
+       <p class="block-intro">Optional intro paragraph.</p>
+       ... content ...
+     </section>
+   ============================================================ */
+
+.block {
+  padding: 52px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.block:last-of-type {
+  border-bottom: none;
+}
+
+/* Title row: heading on the left, small label on the right. */
+.block-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.block-head h2 {
+  font-size: 26px;
+  margin: 0;
+}
+
+/* The little grey label ("group · 06", "gallery", "log"). */
+.block-count {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--ink-faint);
+}
+
+/* Intro paragraph directly under a section title. The negative
+   top margin pulls it up against the heading. */
+.block-intro {
+  color: var(--ink-soft);
+  max-width: 68ch;
+  margin: -14px 0 28px;
+}
+
+/* A standalone paragraph inside a block (no card around it).
+   Used for prose-only sections such as "How to Join". */
+.block-text {
+  color: var(--ink-soft);
+  font-size: 15px;
+  max-width: 68ch;
+  margin: 0;
+}

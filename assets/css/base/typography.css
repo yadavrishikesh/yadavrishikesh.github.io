@@ -1,0 +1,26 @@
+/* ============================================================
+   BASE / TYPOGRAPHY
+   ------------------------------------------------------------
+   Default look of headings and links. Component files override
+   individual sizes; the family and colour come from here.
+   ============================================================ */
+
+h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  color: var(--ink);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--pine-dark);
+  text-decoration-color: var(--rule);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--pine);
+}

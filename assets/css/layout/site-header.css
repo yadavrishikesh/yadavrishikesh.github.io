@@ -1,0 +1,121 @@
+/* ============================================================
+   LAYOUT / SITE HEADER
+   ------------------------------------------------------------
+   Sticky top bar: brand on the left, nav on the right.
+   On screens <= 720px the nav collapses behind a "Menu" button
+   which is wired up in assets/js/main.js.
+
+   Markup lives at the top of every .html page — see
+   docs/STRUCTURE.md ("Shared header and footer").
+   ============================================================ */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(250, 248, 243, 0.92);  /* --paper, semi-transparent */
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--rule);
+}
+
+.nav-wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 16px var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---- Brand (logo chip + name) ---------------------------- */
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.brand-mark {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--pine);
+  border: 1px solid var(--pine);
+  border-radius: 3px;
+  padding: 2px 6px;
+  letter-spacing: 0.04em;
+}
+
+.brand-name {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* ---- Navigation links ------------------------------------ */
+.primary-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.primary-nav a {
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+/* The current page is marked with aria-current="page" in the
+   HTML. That attribute — not a CSS class — is what highlights
+   it, so the styling and the accessibility hint can never drift
+   apart. */
+.primary-nav a:hover,
+.primary-nav a[aria-current="page"] {
+  color: var(--ink);
+  border-bottom-color: var(--gold);
+}
+
+/* ---- Mobile menu button ---------------------------------- */
+/* Hidden on desktop; revealed by the media query below. */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+/* ---- Mobile layout (<= 720px) ---------------------------- */
+@media (max-width: 720px) {
+  .primary-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    flex-direction: column;
+    gap: 0;
+    padding: 4px var(--space-md) 14px;
+    display: none;
+  }
+
+  /* .open is toggled by assets/js/main.js */
+  .primary-nav.open {
+    display: flex;
+  }
+
+  .primary-nav a {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+
+  .nav-toggle {
+    display: inline-block;
+  }
+}

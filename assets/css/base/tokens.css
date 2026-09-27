@@ -1,0 +1,67 @@
+/* ============================================================
+   BASE / TOKENS
+   ------------------------------------------------------------
+   Every colour, font and size used anywhere on the site is
+   declared here as a CSS custom property (a "token").
+
+   RULE OF THUMB: never hard-code a colour or font in a
+   component file. Add it here first, then reference it as
+   var(--token-name). Changing the site's whole look should
+   only ever require editing this one file.
+   ============================================================ */
+
+:root {
+  /* ---- Colour: surfaces ---------------------------------- */
+  --paper: #faf8f3;        /* page background                 */
+  --card:  #fffefb;        /* cards, boxes sitting on --paper */
+
+  /* ---- Colour: text -------------------------------------- */
+  --ink:       #1c2333;    /* headings, primary text          */
+  --ink-soft:  #4a5266;    /* body copy, secondary text       */
+  --ink-faint: #7c8296;    /* captions, metadata, footer      */
+
+  /* ---- Colour: accents ----------------------------------- */
+  --pine:      #2f6f5e;    /* primary accent (links, IDs)     */
+  --pine-dark: #234f43;    /* darker pine, for link text      */
+  --gold:      #a6802d;    /* secondary accent (active nav)   */
+  --slate:     #5b6a8f;    /* tertiary accent (in-prep tag)   */
+
+  /* ---- Colour: tag backgrounds --------------------------- */
+  --tag-published-bg: #e7f0ec;
+  --tag-submitted-bg: #f4ecd9;
+  --tag-progress-bg:  #e9ecf5;
+
+  /* ---- Colour: lines ------------------------------------- */
+  --rule:      #ded7c7;    /* borders, dividers               */
+  --rule-soft: #ece7da;    /* lighter dividers inside lists   */
+
+  /* ---- Typography ---------------------------------------- */
+  --serif: "Source Serif 4", Georgia, serif;                        /* headings   */
+  --sans:  "IBM Plex Sans", -apple-system, Segoe UI, sans-serif;    /* body       */
+  --mono:  "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;/* IDs, meta  */
+
+  /* ---- Layout -------------------------------------------- */
+  --max: 880px;            /* max content width (see layout/container.css) */
+
+  /* ---- Spacing scale ------------------------------------- */
+  /* Use these instead of arbitrary pixel values so vertical
+     rhythm stays consistent across pages.                    */
+  --space-xs:  6px;
+  --space-sm:  14px;
+  --space-md:  24px;
+  --space-lg:  48px;
+  --space-xl:  76px;
+
+  /* ---- Shape --------------------------------------------- */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  /* ---- Breakpoints (documentation only) ------------------ */
+  /* CSS cannot use variables inside @media queries, so these
+     numbers are repeated literally in the component files.
+     If you change one, search the css/ folder for the number.
+       720px -> tablet / mobile nav collapse
+       560px -> small phone, cards stack
+       480px -> narrow phone, student cards go vertical       */
+}

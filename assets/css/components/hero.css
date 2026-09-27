@@ -1,0 +1,96 @@
+/* ============================================================
+   COMPONENT / HERO
+   ------------------------------------------------------------
+   The introduction block at the top of the home page only:
+   eyebrow line, name, research keywords, short bio, link row,
+   and a square portrait photo.
+
+   On narrow screens the photo moves above the text
+   (flex-wrap: wrap-reverse).
+   ============================================================ */
+
+.hero {
+  padding: var(--space-xl) 0 56px;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ---- Two-column layout: text + photo --------------------- */
+.hero-flex {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.hero-text {
+  flex: 1 1 380px;
+  min-width: 280px;
+}
+
+.hero-photo {
+  width: 148px;
+  height: 148px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  background: var(--rule-soft);
+  flex: 0 0 auto;
+}
+
+/* ---- Text pieces ----------------------------------------- */
+.hero-eyebrow {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--pine);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin: 0 0 var(--space-xs);
+}
+
+.hero .role {
+  font-size: 18px;
+  color: var(--ink-soft);
+  margin: 0 0 22px;
+}
+
+.hero .lede {
+  max-width: 62ch;
+  font-size: 17.5px;
+  color: var(--ink-soft);
+}
+
+/* ---- Row of small link buttons (email, scholar, cv, ...) -- */
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.hero-links a {
+  font-family: var(--mono);
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  background: var(--card);
+  padding: 7px 12px;
+  border-radius: var(--radius-sm);
+}
+
+.hero-links a:hover {
+  border-color: var(--pine);
+  color: var(--pine-dark);
+}
+
+@media (max-width: 560px) {
+  .hero-photo {
+    width: 110px;
+    height: 110px;
+  }
+}

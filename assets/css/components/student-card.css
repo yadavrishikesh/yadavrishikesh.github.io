@@ -1,0 +1,86 @@
+/* ============================================================
+   COMPONENT / STUDENT CARD
+   ------------------------------------------------------------
+   Bigger, photo-led cards laid out two per row — used for the
+   group members on the Research page.
+
+   Six cards in a .student-grid gives the 2 x 3 grid the page
+   is designed around. Add or remove cards freely; the grid
+   reflows on its own.
+
+   Standard markup:
+
+     <div class="student-grid">
+       <div class="student-card">
+         <img class="student-photo" src="..." alt="Name">
+         <div class="student-info">
+           <div class="entry-id">PHD-01</div>
+           <p class="entry-title">Name</p>
+           <p class="entry-meta">PhD, Month Year-present</p>
+           <p class="entry-desc">Working on ...</p>
+         </div>
+       </div>
+       ... more cards ...
+     </div>
+
+   The text classes are shared with the entry card
+   (components/entry.css) so the two stay visually consistent.
+   ============================================================ */
+
+.student-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* two per row */
+  gap: 18px;
+}
+
+.student-card {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 20px;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
+}
+
+.student-photo {
+  width: 108px;
+  height: 108px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  background: var(--rule-soft);
+  flex: 0 0 auto;
+}
+
+/* min-width:0 lets long words wrap instead of stretching the card. */
+.student-info {
+  min-width: 0;
+}
+
+.student-info .entry-id {
+  margin-bottom: 4px;
+}
+
+.student-info .entry-title {
+  margin-top: 0;
+}
+
+/* Tablet and below: one card per row. */
+@media (max-width: 720px) {
+  .student-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Narrow phones: photo goes full width above the text. */
+@media (max-width: 480px) {
+  .student-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .student-photo {
+    width: 100%;
+    height: 200px;
+  }
+}

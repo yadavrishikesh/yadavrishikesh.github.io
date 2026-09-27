@@ -1,0 +1,13 @@
+/* ============================================================
+   LAYOUT / CONTAINER
+   ------------------------------------------------------------
+   The single horizontal-width rule for the whole site.
+   Put .container on any element that should line up with the
+   rest of the page content.
+   ============================================================ */
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}

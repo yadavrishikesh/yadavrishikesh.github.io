@@ -1,0 +1,39 @@
+/* ============================================================
+   PAGES / PAGE HEAD
+   ------------------------------------------------------------
+   The <h1> and intro paragraph at the top of every inner page
+   (Research, Teaching, Conferences, Reading Group).
+
+   The home page does NOT use this — it uses the hero instead
+   (see components/hero.css).
+
+   Standard markup:
+
+     <main class="page container">
+       <div class="page-head">
+         <h1>Research</h1>
+         <p class="page-intro">One sentence about this page.</p>
+       </div>
+       <section class="block"> ... </section>
+     </main>
+   ============================================================ */
+
+/* Top padding for inner pages, so the h1 clears the sticky header. */
+.page {
+  padding-top: var(--space-lg);
+}
+
+.page-head {
+  margin-bottom: var(--space-lg);
+}
+
+.page-head h1 {
+  font-size: 34px;
+  margin: 0 0 var(--space-xs);
+}
+
+.page-intro {
+  color: var(--ink-soft);
+  max-width: 68ch;
+  margin: 0;
+}
