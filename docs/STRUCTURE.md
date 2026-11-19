@@ -78,7 +78,7 @@ at deploy time — no HTML would need to change.
 does two small things, both of which are enhancements: **if the script fails to
 load, every page still renders correctly and every link still works.**
 
-1. **Mobile menu** — the "Menu" button toggles `.open` on the nav below 720px.
+1. **Mobile menu** — the "Menu" button toggles `.open` on the nav below 960px.
 2. **Active nav link** — re-derives `aria-current="page"` from the URL, as a
    safety net in case someone copies a page and forgets to move the attribute.
 

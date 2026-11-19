@@ -21,7 +21,7 @@
 
   /* ----------------------------------------------------------
      1. MOBILE MENU
-     The nav is hidden by CSS below 720px. Clicking "Menu"
+     The nav is hidden by CSS below 960px. Clicking "Menu"
      toggles the .open class, which reveals it. aria-expanded is
      kept in sync so screen readers announce the state.
      ---------------------------------------------------------- */

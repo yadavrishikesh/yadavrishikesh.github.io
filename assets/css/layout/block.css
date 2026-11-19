@@ -18,7 +18,8 @@
    ============================================================ */
 
 .block {
-  padding: 52px 0;
+  padding-top: 52px;     /* side gutter comes from .container */
+  padding-bottom: 52px;
   border-bottom: 1px solid var(--rule);
 }
 

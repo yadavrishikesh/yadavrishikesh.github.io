@@ -35,6 +35,7 @@ There is nothing to install, compile, or watch. Edit a file, refresh the browser
 ├── teaching.html               Courses by semester
 ├── conferences.html            Talks and workshops
 ├── reading-group.html          Reading group sessions
+├── useful-links.html           Tools and open-source data links
 ├── 404.html                    Shown for unknown URLs
 │
 ├── assets/

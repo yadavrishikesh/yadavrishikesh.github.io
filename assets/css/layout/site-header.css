@@ -2,7 +2,7 @@
    LAYOUT / SITE HEADER
    ------------------------------------------------------------
    Sticky top bar: brand on the left, nav on the right.
-   On screens <= 720px the nav collapses behind a "Menu" button
+   On screens <= 960px the nav collapses behind a "Menu" button
    which is wired up in assets/js/main.js.
 
    Markup lives at the top of every .html page — see
@@ -19,7 +19,7 @@
 }
 
 .nav-wrap {
-  max-width: var(--max);
+  max-width: 1080px;  /* a little wider than the content, so six nav links fit on one line */
   margin: 0 auto;
   padding: 16px var(--space-md);
   display: flex;
@@ -50,12 +50,13 @@
   font-family: var(--serif);
   font-weight: 600;
   font-size: 18px;
+  white-space: nowrap;
 }
 
 /* ---- Navigation links ------------------------------------ */
 .primary-nav {
   display: flex;
-  gap: 28px;
+  gap: 22px;
 }
 
 .primary-nav a {
@@ -64,6 +65,7 @@
   text-decoration: none;
   padding: 4px 0;
   border-bottom: 2px solid transparent;
+  white-space: nowrap;
 }
 
 /* The current page is marked with aria-current="page" in the
@@ -90,8 +92,10 @@
   cursor: pointer;
 }
 
-/* ---- Mobile layout (<= 720px) ---------------------------- */
-@media (max-width: 720px) {
+/* ---- Mobile layout (<= 960px) ---------------------------- */
+/* Collapses earlier than the 720px content breakpoint because
+   the six nav links need ~900px to sit on one line. */
+@media (max-width: 960px) {
   .primary-nav {
     position: absolute;
     top: 100%;

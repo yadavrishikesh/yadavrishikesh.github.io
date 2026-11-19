@@ -10,7 +10,9 @@
    ============================================================ */
 
 .hero {
-  padding: var(--space-xl) 0 56px;
+  /* Top/bottom only: the side gutter comes from .container. */
+  padding-top: var(--space-xl);
+  padding-bottom: 56px;
   border-bottom: 1px solid var(--rule);
 }
 

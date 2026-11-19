@@ -61,7 +61,8 @@
   /* CSS cannot use variables inside @media queries, so these
      numbers are repeated literally in the component files.
      If you change one, search the css/ folder for the number.
-       720px -> tablet / mobile nav collapse
+       960px -> header nav collapses behind "Menu"
+       720px -> tablet layout
        560px -> small phone, cards stack
        480px -> narrow phone, student cards go vertical       */
 }
