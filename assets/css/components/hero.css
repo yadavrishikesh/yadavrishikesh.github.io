@@ -121,6 +121,61 @@
   color: var(--link-hover);
 }
 
+/* Quotes card under the bio */
+.hero-quotes {
+  margin-top: 20px;
+  padding: 14px 18px;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius-md);
+}
+
+.hero-quotes h2 {
+  font-size: 17px;
+  margin: 0 0 10px;
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 24px;
+}
+
+.quote-wide {
+  grid-column: 1 / -1;
+}
+
+.quote {
+  margin: 0;
+}
+
+.quote blockquote {
+  margin: 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 15.5px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.quote figcaption {
+  margin-top: 4px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--pine);
+}
+
+.quote figcaption::before {
+  content: "\2014\00a0";   /* em dash + space */
+}
+
+@media (max-width: 560px) {
+  .quote-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 720px) {
   /* Phones: photo, then bio, then upcoming events */
   .hero-flex {
