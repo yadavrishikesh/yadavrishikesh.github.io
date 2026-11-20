@@ -121,59 +121,29 @@
   color: var(--link-hover);
 }
 
-/* Quotes card under the bio */
+/* Quotes under the bio: one compact line each, author inline */
 .hero-quotes {
-  margin-top: 20px;
-  padding: 14px 18px;
-  background: var(--card);
-  border: 1px solid var(--rule);
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 10px 0 0 14px;
   border-left: 3px solid var(--gold);
-  border-radius: var(--radius-md);
 }
 
-.hero-quotes h2 {
-  font-size: 17px;
-  margin: 0 0 10px;
-}
-
-.quote-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px 24px;
-}
-
-.quote-wide {
-  grid-column: 1 / -1;
-}
-
-.quote {
-  margin: 0;
-}
-
-.quote blockquote {
-  margin: 0;
+.hero-quotes li {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 15.5px;
-  line-height: 1.45;
+  font-size: 15px;
+  line-height: 1.5;
   color: var(--ink);
+  margin: 0 0 4px;
 }
 
-.quote figcaption {
-  margin-top: 4px;
+.quote-by {
   font-family: var(--mono);
+  font-style: normal;
   font-size: 12px;
   color: var(--pine);
-}
-
-.quote figcaption::before {
-  content: "\2014\00a0";   /* em dash + space */
-}
-
-@media (max-width: 560px) {
-  .quote-grid {
-    grid-template-columns: 1fr;
-  }
+  white-space: nowrap;
 }
 
 @media (max-width: 720px) {
