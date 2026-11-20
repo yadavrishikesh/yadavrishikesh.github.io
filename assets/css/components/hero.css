@@ -5,33 +5,32 @@
    eyebrow line, name, research keywords, short bio, link row,
    and a square portrait photo.
 
-   On narrow screens the photo moves above the text
-   (flex-wrap: wrap-reverse).
+   On narrow screens the photo moves above the text.
    ============================================================ */
 
 .hero {
   /* Top/bottom only: the side gutter comes from .container. */
-  padding-top: var(--space-xl);
-  padding-bottom: 56px;
+  padding-top: var(--space-lg);
+  padding-bottom: 36px;
   border-bottom: 1px solid var(--rule);
 }
 
 /* ---- Two-column layout: text + photo --------------------- */
 .hero-flex {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  flex-wrap: wrap-reverse;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;   /* text | photo */
+  gap: 48px;
+  align-items: start;
 }
 
 .hero-text {
-  flex: 1 1 380px;
-  min-width: 280px;
+  min-width: 0;
 }
 
 .hero-photo {
-  width: 260px;
-  height: 260px;
+  width: 240px;
+  height: 240px;
+  margin-top: 30px;   /* lines the photo up with the name */
   border-radius: var(--radius-lg);
   object-fit: cover;
   border: 1px solid var(--rule);
@@ -61,16 +60,18 @@
 }
 
 .hero .lede {
-  max-width: 62ch;
-  font-size: 17.5px;
+  max-width: 72ch;
+  font-size: 16.5px;
+  line-height: 1.6;
   color: var(--ink-soft);
+  margin: 0 0 12px;
 }
 
 /* ---- Row of small link buttons (email, scholar, cv, ...) -- */
 .hero-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin-top: 22px;
 }
 
@@ -78,16 +79,27 @@
   font-family: var(--mono);
   font-size: 13px;
   text-decoration: none;
-  color: var(--ink);
+  color: var(--link);
   border: 1px solid var(--rule);
   background: var(--card);
-  padding: 7px 12px;
+  padding: 6px 10px;
   border-radius: var(--radius-sm);
 }
 
 .hero-links a:hover {
-  border-color: var(--pine);
-  color: var(--pine-dark);
+  border-color: var(--link);
+  color: var(--link-hover);
+}
+
+@media (max-width: 720px) {
+  .hero-flex {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .hero-photo {
+    order: -1;          /* photo above the text on phones */
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 560px) {

@@ -30,22 +30,22 @@
 .student-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;   /* two per row */
-  gap: 18px;
+  gap: 14px;
 }
 
 .student-card {
   display: flex;
-  gap: 18px;
+  gap: 16px;
   align-items: flex-start;
-  padding: 20px;
+  padding: 16px;
   background: var(--card);
   border: 1px solid var(--rule);
   border-radius: var(--radius-md);
 }
 
 .student-photo {
-  width: 108px;
-  height: 108px;
+  width: 96px;
+  height: 96px;
   border-radius: 8px;
   object-fit: cover;
   border: 1px solid var(--rule);

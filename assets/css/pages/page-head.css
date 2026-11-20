@@ -20,11 +20,11 @@
 
 /* Top padding for inner pages, so the h1 clears the sticky header. */
 .page {
-  padding-top: var(--space-lg);
+  padding-top: 36px;
 }
 
 .page-head {
-  margin-bottom: var(--space-lg);
+  margin-bottom: 4px;
 }
 
 .page-head h1 {

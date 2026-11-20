@@ -255,3 +255,24 @@ For a section that is just prose, replace the `.catalog` with:
   `assets/css/base/tokens.css`, or add a new token there first.
 - **Don't leave an `<img>` without a meaningful `alt`.**
 - **Don't forget the other four pages** when you edit the header or footer.
+
+---
+
+## Layout helpers
+
+Wrap a list of entries in one of these instead of a plain `<div class="catalog">`:
+
+| Class | Use for |
+|---|---|
+| `catalog` | One card per row (publications, manuscripts) |
+| `catalog catalog-cols` | Medium cards side by side, as many 300px columns as fit (courses, short courses, links) |
+| `catalog catalog-cols-2` | Exactly two columns (talks) |
+| `catalog catalog-cols-sm` | Very short cards, as many 180px columns as fit (signposts, journal names, slides) |
+
+Other helpers:
+
+- `<div class="split">` holds two titled lists side by side, each in its own `<div>` with an `<h2>`. The home page's Upcoming Events / Recent Updates use it.
+- `<ul class="chips">` is a wrapped list of short labels, e.g. courses taken.
+- `<a class="live-link" href="...">Event page</a>` adds a blinking highlight button for an upcoming event.
+
+All of these collapse to a single column on phones.

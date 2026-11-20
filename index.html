@@ -130,71 +130,61 @@
   </section>
 
   <!-- ============================================================
-       Upcoming Events — a short news log, newest first
-       Copy one .entry block to add an item.
+       NEWS — Upcoming events (left) and recent updates (right),
+       newest first. Copy one .entry block to add an item.
        ============================================================ -->
   <section class="block container">
-    <div class="block-head">
-      <h2>Upcoming Events</h2>
-      <span class="block-count">log</span>
-    </div>
+    <div class="split">
 
-    <div class="catalog">
+      <div>
+        <h2>Upcoming Events</h2>
+        <div class="catalog">
+          <div class="entry">
+            <div class="entry-id">2026&middot;05</div>
+            <div>
+              <p class="entry-title"><a href="https://www.isid.ac.in/~spatstat2026/">Spatial Statistics Workshop at ISI Delhi</a></p>
+              <p class="entry-desc">Working on spatiotemporal modeling of cyclonic storms and rare disease data.</p>
+              <a class="live-link" href="https://www.isid.ac.in/~spatstat2026/">Workshop page</a>
+            </div>
+          </div>
 
-      <div class="entry">
-        <div class="entry-id">2026&middot;05</div>
-        <div>
-          <p class="entry-title"><a href="https://www.isid.ac.in/~spatstat2026/">Spatial Statistics Workshop at ISI Delhi</a></p>
-          <p class="entry-desc">Working on spatiotemporal modeling of cyclonic storms and rare disease data.</p>
-          <a class="live-link" href="https://www.isid.ac.in/~spatstat2026/">Workshop page</a>
+          <div class="entry">
+            <div class="entry-id">2026</div>
+            <div>
+              <p class="entry-title"><a href="https://www.intindstat.org/conference2026/shortCourses">Two teaching courses at IISA 2026, BHU, Varanasi</a></p>
+              <p class="entry-desc">&ldquo;Regression modelling of multivariate precipitation extremes under regular variation,&rdquo; with Arnab Hazra.</p>
+              <a class="live-link" href="https://www.intindstat.org/conference2026/shortCourses">Short courses page</a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="entry">
-        <div class="entry-id">2026</div>
-        <div>
-          <p class="entry-title"><a href="https://www.intindstat.org/conference2026/shortCourses">Two teaching courses at IISA 2026, BHU, Varanasi</a></p>
-          <p class="entry-desc">&ldquo;Regression modelling of multivariate precipitation extremes under regular variation,&rdquo; with Arnab Hazra.</p>
-          <a class="live-link" href="https://www.intindstat.org/conference2026/shortCourses">Short courses page</a>
-        </div>
-      </div>
-      
-    </div>
-  </section>
+      <div>
+        <h2>Recent Updates</h2>
+        <div class="catalog">
+          <div class="entry">
+            <div class="entry-id">2026&middot;06</div>
+            <div>
+              <p class="entry-title">Prashant and Khushi joined the group as PhD students</p>
+              <p class="entry-desc">Working on spatiotemporal modeling of cyclonic storms and rare disease data.</p>
+            </div>
+          </div>
 
-  <!-- ============================================================
-       RECENT UPDATES — a short news log, newest first
-       Copy one .entry block to add an item.
-       ============================================================ -->
-  <section class="block container">
-    <div class="block-head">
-      <h2>Recent updates</h2>
-      <span class="block-count">log</span>
-    </div>
+          <div class="entry">
+            <div class="entry-id">2026</div>
+            <div>
+              <p class="entry-title">New manuscript accepted in <em>Extremes</em></p>
+              <p class="entry-desc">&ldquo;Regression modelling of multivariate precipitation extremes under regular variation,&rdquo; with Dr. Arnab Hazra (IIT Kanpur).</p>
+            </div>
+          </div>
 
-    <div class="catalog">
-
-      <div class="entry">
-        <div class="entry-id">2026&middot;06</div>
-        <div>
-          <p class="entry-title">Prashant and Khushi joined the group as PhD students</p>
-          <p class="entry-desc">Working on spatiotemporal modeling of cyclonic storms and rare disease data.</p>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-id">2026</div>
-        <div>
-          <p class="entry-title">New manuscript accepted in <em>Extremes</em></p>
-          <p class="entry-desc">&ldquo;Regression modelling of multivariate precipitation extremes under regular variation,&rdquo; with Dr. Arnab Hazra (IIT Kanpur).</p>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-id">2025&middot;06</div>
-        <div>
-          <p class="entry-title">Masterclass in Statistical Data Analytics and Deep Learning, IIT Mandi</p>
-          <p class="entry-desc">Taught Intro to Python and NNs for predictive modeling, 23&ndash;27 June 2025.</p>
+          <div class="entry">
+            <div class="entry-id">2025&middot;06</div>
+            <div>
+              <p class="entry-title">Masterclass in Statistical Data Analytics and Deep Learning, IIT Mandi</p>
+              <p class="entry-desc">Taught Intro to Python and NNs for predictive modeling, 23&ndash;27 June 2025.</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -202,14 +192,14 @@
   </section>
 
   <!-- ============================================================
-       EXPLORE — signposts to the other pages
+       EXPLORE — signposts to the other pages, in a grid
        ============================================================ -->
   <section class="block container">
     <div class="block-head">
       <h2>Explore</h2>
     </div>
 
-    <div class="catalog">
+    <div class="catalog catalog-cols-sm">
 
       <div class="entry">
         <div class="entry-id">01</div>
@@ -255,9 +245,11 @@
   </section>
 
   <!-- ============================================================
-       MOMENTS — photo gallery
-       Replace each src with a real photo; see docs/IMAGES.md.
-       ============================================================ -->
+       MOMENTS — photo gallery. Hidden until real photos exist:
+       add photos to assets/images/moments/ (see docs/IMAGES.md),
+       update the src/captions below, and remove the comment
+       markers around the section.
+       ============================================================
   <section class="block container">
     <div class="block-head">
       <h2>Moments</h2>
@@ -285,6 +277,7 @@
       </figure>
     </div>
   </section>
+  -->
 
 </main>
 

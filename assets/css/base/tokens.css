@@ -22,7 +22,9 @@
 
   /* ---- Colour: accents ----------------------------------- */
   --pine:      #2f6f5e;    /* primary accent (links, IDs)     */
-  --pine-dark: #234f43;    /* darker pine, for link text      */
+  --pine-dark: #234f43;    /* darker pine                     */
+  --link:       #1a5fb4;   /* hyperlinks — distinct from text  */
+  --link-hover: #0d3f80;   /* hyperlinks on hover              */
   --gold:      #a6802d;    /* secondary accent (active nav)   */
   --slate:     #5b6a8f;    /* tertiary accent (in-prep tag)   */
 
@@ -41,7 +43,7 @@
   --mono:  "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;/* IDs, meta  */
 
   /* ---- Layout -------------------------------------------- */
-  --max: 880px;            /* max content width (see layout/container.css) */
+  --max: 1040px;           /* max content width (see layout/container.css) */
 
   /* ---- Spacing scale ------------------------------------- */
   /* Use these instead of arbitrary pixel values so vertical

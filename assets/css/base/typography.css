@@ -16,11 +16,12 @@ h3 {
 }
 
 a {
-  color: var(--pine-dark);
-  text-decoration-color: var(--rule);
+  color: var(--link);
+  text-decoration-color: rgba(26, 95, 180, 0.35);
   text-underline-offset: 3px;
 }
 
 a:hover {
-  color: var(--pine);
+  color: var(--link-hover);
+  text-decoration-color: currentColor;
 }
