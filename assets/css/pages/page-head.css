@@ -37,3 +37,50 @@
   max-width: 68ch;
   margin: 0;
 }
+
+
+/* ---- Page head with a photo beside the intro ------------- */
+/* <div class="page-head page-head-media">
+     <div> h1 + intro </div>
+     <figure class="group-photo"> img + figcaption </figure>
+   </div>                                                     */
+.page-head-media {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 440px;
+  gap: 36px;
+  align-items: start;
+  margin-bottom: 16px;
+}
+
+.page-head-media .page-intro + .page-intro {
+  margin-top: 12px;
+}
+
+.group-photo {
+  margin: 0;
+}
+
+.group-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 50% 45%;   /* keeps every face in the crop */
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--rule);
+  background: var(--rule-soft);
+}
+
+.group-photo figcaption {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-faint);
+  margin-top: var(--space-xs);
+}
+
+@media (max-width: 860px) {
+  .page-head-media {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
