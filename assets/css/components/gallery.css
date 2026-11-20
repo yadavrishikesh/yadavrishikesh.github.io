@@ -44,3 +44,66 @@
   color: var(--ink-faint);
   margin-top: var(--space-xs);
 }
+
+
+/* ---- Mosaic variant --------------------------------------- */
+/* Three columns with a fixed photo height, so a .gallery-wide
+   figure can span two columns without becoming taller.
+     <div class="gallery gallery-mosaic">
+       <figure class="gallery-wide"> ... </figure>
+       <figure> ... </figure>
+     </div>                                                    */
+.gallery-mosaic {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.gallery-mosaic img {
+  aspect-ratio: auto;
+  height: 280px;
+  transition: transform 0.25s ease;
+}
+
+.gallery-mosaic figure {
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.gallery-mosaic figure:hover img {
+  transform: scale(1.02);
+}
+
+.gallery-mosaic .gallery-wide {
+  grid-column: span 2;
+}
+
+.gallery-mosaic figcaption {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin-top: 8px;
+}
+
+@media (max-width: 720px) {
+  .gallery-mosaic {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallery-mosaic img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-mosaic {
+    grid-template-columns: 1fr;
+  }
+  .gallery-mosaic .gallery-wide {
+    grid-column: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery-mosaic img {
+    transition: none;
+  }
+}

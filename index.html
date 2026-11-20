@@ -201,6 +201,42 @@
   </section>
 
   <!-- ============================================================
+       MOMENTS — photo gallery. Photos live in assets/images/moments/.
+       Add .gallery-wide to a <figure> to make it span two columns.
+       Use style="object-position: X% Y%" on an <img> to choose
+       which part of the photo stays in the crop.
+       ============================================================ -->
+  <section class="block container">
+    <div class="block-head">
+      <h2>Beyond the Equations</h2>
+      <span class="block-count">moments</span>
+    </div>
+
+    <div class="gallery gallery-mosaic">
+      <figure class="gallery-wide">
+        <img src="assets/images/moments/teaching.jpg" alt="Rishikesh teaching a full room of students and researchers" loading="lazy">
+        <figcaption>Turning theory into intuition &mdash; one lecture at a time</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/moments/himalayan-ride.jpg" alt="Rishikesh on a motorcycle above a green Himalayan river valley" style="object-position: 50% 35%" loading="lazy">
+        <figcaption>Weekend mode: chasing valleys on two wheels</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/moments/snow-day.jpg" alt="Rishikesh laughing with a snowball in hand on a snowy Himalayan hillside" style="object-position: 50% 20%" loading="lazy">
+        <figcaption>Snowball fights &gt; p-values (sometimes)</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/moments/campus-cricket.jpg" alt="A cricket match on the IIT Mandi campus ground, with hills behind" style="object-position: 50% 70%" loading="lazy">
+        <figcaption>Campus cricket at IIT Mandi &mdash; the Himalayas as our pavilion</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/group/research-group.jpg" alt="Members of the research group around a lunch table" style="object-position: 50% 45%" loading="lazy">
+        <figcaption>Group lunch: where the best research ideas begin</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============================================================
        EXPLORE — signposts to the other pages, in a grid
        ============================================================ -->
   <section class="block container">
@@ -253,40 +289,6 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       MOMENTS — photo gallery. Hidden until real photos exist:
-       add photos to assets/images/moments/ (see docs/IMAGES.md),
-       update the src/captions below, and remove the comment
-       markers around the section.
-       ============================================================
-  <section class="block container">
-    <div class="block-head">
-      <h2>Moments</h2>
-      <span class="block-count">gallery</span>
-    </div>
-
-    <p class="block-intro">Lab, campus, conferences, celebrations &mdash; whatever you would like visitors to see. Add or remove photos freely.</p>
-
-    <div class="gallery">
-      <figure>
-        <img src="assets/images/profile.png" alt="[Caption]">
-        <figcaption>[Caption, e.g. "Lab, IIT Mandi"]</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/profile.png" alt="[Caption]">
-        <figcaption>[Caption]</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/profile.png" alt="[Caption]">
-        <figcaption>[Caption]</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/profile.png" alt="[Caption]">
-        <figcaption>[Caption]</figcaption>
-      </figure>
-    </div>
-  </section>
-  -->
 
 </main>
 
