@@ -46,14 +46,24 @@
    </div>                                                     */
 .page-head-media {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 440px;
+  grid-template-columns: minmax(0, 1fr) 340px;
   gap: 36px;
-  align-items: start;
+  align-items: center;
   margin-bottom: 16px;
+}
+
+.page-head-media .page-intro {
+  max-width: none;
+  line-height: 1.65;
 }
 
 .page-head-media .page-intro + .page-intro {
   margin-top: 12px;
+}
+
+.research-statement strong {
+  color: var(--ink);
+  font-weight: 600;
 }
 
 .group-photo {
@@ -63,9 +73,9 @@
 .group-photo img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: 50% 45%;   /* keeps every face in the crop */
+  object-position: 50% 40%;   /* keeps every face in the crop */
   border-radius: var(--radius-lg);
   border: 1px solid var(--rule);
   background: var(--rule-soft);
