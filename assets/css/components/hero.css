@@ -18,18 +18,48 @@
 /* ---- Two-column layout: text + photo --------------------- */
 .hero-flex {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 240px;   /* text | photo */
-  gap: 48px;
+  grid-template-columns: minmax(0, 1fr) 300px;   /* text | photo + events */
+  grid-template-areas:
+    "text photo"
+    "text events";
+  grid-template-rows: auto 1fr;
+  column-gap: 40px;
+  row-gap: 24px;
   align-items: start;
 }
 
 .hero-text {
+  grid-area: text;
   min-width: 0;
 }
 
+/* Upcoming events, stacked under the photo */
+.hero-events {
+  grid-area: events;
+}
+
+.hero-events h2 {
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+
+.hero-events .entry {
+  padding: 12px 14px;
+}
+
+.hero-events .entry-title {
+  font-size: 15.5px;
+}
+
+.hero-events .entry-desc {
+  font-size: 14px;
+}
+
 .hero-photo {
-  width: 240px;
-  height: 240px;
+  grid-area: photo;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
   margin-top: 30px;   /* lines the photo up with the name */
   border-radius: var(--radius-lg);
   object-fit: cover;
@@ -71,18 +101,18 @@
 .hero-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
   margin-top: 22px;
 }
 
 .hero-links a {
   font-family: var(--mono);
-  font-size: 13px;
+  font-size: 12.5px;
   text-decoration: none;
   color: var(--link);
   border: 1px solid var(--rule);
   background: var(--card);
-  padding: 6px 10px;
+  padding: 5px 9px;
   border-radius: var(--radius-sm);
 }
 
@@ -92,12 +122,16 @@
 }
 
 @media (max-width: 720px) {
+  /* Phones: photo, then bio, then upcoming events */
   .hero-flex {
     grid-template-columns: 1fr;
-    gap: 24px;
+    grid-template-areas:
+      "photo"
+      "text"
+      "events";
+    grid-template-rows: auto;
   }
   .hero-photo {
-    order: -1;          /* photo above the text on phones */
     margin-top: 0;
   }
 }
