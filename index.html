@@ -125,6 +125,7 @@
         </div>
 
         <!-- Quotes from statisticians: one line each, author right after. -->
+        <p class="quotes-label">Statistics in three lines &mdash; models, extremes, and curiosity:</p>
         <ul class="hero-quotes" aria-label="Quotes from statisticians">
           <li>&ldquo;All models are wrong, but some are useful.&rdquo; <span class="quote-by">&mdash; George E. P. Box</span></li>
           <li>&ldquo;It is impossible that the improbable will never happen.&rdquo; <span class="quote-by">&mdash; Emil J. Gumbel</span></li>
@@ -208,37 +209,42 @@
   </section>
 
   <!-- ============================================================
-       MOMENTS — photo collage. Photos live in assets/images/moments/.
-       .tile-wide spans two columns, .tile-tall spans two rows
-       (see components/gallery.css).
+       MOMENTS — photo rows. Photos live in assets/images/moments/
+       (see .photo-rows in components/gallery.css).
        ============================================================ -->
   <section class="block container">
     <div class="block-head">
-      <h2>Beyond the Equations</h2>
+      <h2>Beyond the Equations and Modeling</h2>
       <span class="block-count">moments</span>
     </div>
 
-    <div class="gallery gallery-collage">
-      <figure class="tile-wide">
-        <img src="assets/images/moments/teaching.jpg" alt="Rishikesh giving an invited talk to a full room at IIT Bombay" style="object-position: 50% 55%" loading="lazy">
-        <figcaption>Turning theory into intuition &mdash; one lecture at a time<br><span class="caption-note">during an invited talk at IIT Bombay (thanks to Parthanil Da and Dr. Arpita!)</span></figcaption>
-      </figure>
-      <figure class="tile-tall">
-        <img src="assets/images/moments/himalayan-ride.jpg" alt="Rishikesh on a motorcycle above a green Himalayan river valley" style="object-position: 45% 50%" loading="lazy">
-        <figcaption>Weekend mode: chasing valleys on two wheels</figcaption>
-      </figure>
-      <figure class="tile-tall">
-        <img src="assets/images/moments/campus-cricket.jpg" alt="A cricket match on the IIT Mandi campus ground, with hills behind" style="object-position: 50% 60%" loading="lazy">
-        <figcaption>Campus cricket at IIT Mandi &mdash; the Himalayas as our pavilion</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/moments/snow-day.jpg" alt="Rishikesh laughing with a snowball in hand on a snowy Himalayan hillside" style="object-position: 50% 25%" loading="lazy">
-        <figcaption>Snowball fights &gt; p-values (sometimes)</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/group/research-group.jpg" alt="Members of the research group around a lunch table" style="object-position: 50% 40%" loading="lazy">
-        <figcaption>Group lunch: where the best ideas begin</figcaption>
-      </figure>
+    <!-- Photos are shown uncropped. Each row's photos share one height:
+         set --ar on each <figure> to the photo's width / height. -->
+    <div class="photo-rows">
+      <div class="photo-row">
+        <figure style="--ar: 1.333">
+          <img src="assets/images/moments/teaching.jpg" alt="Rishikesh giving an invited talk to a full room at IIT Bombay" loading="lazy">
+          <figcaption>Turning theory into intuition &mdash; one lecture at a time<span class="caption-note">during an invited talk at IIT Bombay (thanks to Parthanil Da and Dr. Arpita!)</span></figcaption>
+        </figure>
+        <figure style="--ar: 1.153">
+          <img src="assets/images/moments/snow-day.jpg" alt="Rishikesh laughing with a snowball in hand on a snowy Himalayan hillside" loading="lazy">
+          <figcaption>Snowball fights &gt; p-values (sometimes)</figcaption>
+        </figure>
+      </div>
+      <div class="photo-row">
+        <figure style="--ar: 0.75">
+          <img src="assets/images/moments/himalayan-ride.jpg" alt="Rishikesh on a motorcycle above a green Himalayan river valley" loading="lazy">
+          <figcaption>Weekend mode: chasing valleys on two wheels</figcaption>
+        </figure>
+        <figure style="--ar: 0.75">
+          <img src="assets/images/moments/campus-cricket.jpg" alt="A cricket match on the IIT Mandi campus ground, with hills behind" loading="lazy">
+          <figcaption>Campus cricket at IIT Mandi &mdash; the Himalayas as our pavilion</figcaption>
+        </figure>
+        <figure style="--ar: 0.75">
+          <img src="assets/images/group/research-group.jpg" alt="Members of the research group around a lunch table" loading="lazy">
+          <figcaption>Group lunch: where the best ideas begin</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
