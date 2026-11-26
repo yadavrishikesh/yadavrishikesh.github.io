@@ -84,6 +84,13 @@
   line-height: 1.35;
 }
 
+.lecture-topics {
+  margin: 3px 0 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--ink-soft);
+}
+
 .lecture-links {
   margin: 4px 0 0;
   font-size: 13.5px;
