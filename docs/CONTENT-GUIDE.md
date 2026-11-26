@@ -276,3 +276,12 @@ Other helpers:
 - `<a class="live-link" href="...">Event page</a>` adds a blinking highlight button for an upcoming event.
 
 All of these collapse to a single column on phones.
+
+### "On this page" jump links (subnav)
+
+Research, Teaching and Conferences have a sticky row of jump links under the
+page title (`<nav class="subnav">`). Each link's `href="#id"` matches a
+`<section class="block" id="id">`. To add a section to the bar, give the
+section an `id` and add an `<a href="#that-id">` inside the nav; wrap related
+links in `<span class="subnav-group">` with a `<span class="subnav-label">`.
+Styles: `assets/css/components/subnav.css`; highlighting: `assets/js/main.js`.

@@ -1,0 +1,102 @@
+/* ============================================================
+   COMPONENT / SUBNAV ("On this page")
+   ------------------------------------------------------------
+   A row of jump links that sits under the page title and
+   sticks below the site header while scrolling. Every section
+   stays on the same page; the links just jump to it.
+
+   Markup (each href matches a <section id="...">):
+
+     <nav class="subnav" aria-label="On this page">
+       <a href="#packages">Packages &amp; Tools</a>
+       <span class="subnav-group">
+         <span class="subnav-label">Manuscripts</span>
+         <a href="#preprints">Submitted</a>
+       </span>
+     </nav>
+
+   assets/js/main.js highlights the link of the section in view.
+   On narrow screens the row scrolls sideways instead of wrapping.
+   ============================================================ */
+
+.subnav {
+  position: sticky;
+  top: 61px;                      /* height of .site-header */
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  margin: 6px 0 0;
+  padding: 10px 0;
+  background: rgba(250, 248, 243, 0.95);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--rule);
+}
+
+.subnav a,
+.subnav-label {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.subnav a {
+  padding: 7px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.subnav a:hover {
+  color: var(--link-hover);
+  border-color: var(--link);
+}
+
+.subnav a.is-active {
+  background: var(--pine);
+  border-color: var(--pine);
+  color: #fff;
+}
+
+/* A labelled cluster of related links, e.g. Manuscripts. */
+.subnav-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 4px 3px 10px;
+  border: 1px dashed var(--rule);
+  border-radius: 999px;
+}
+
+.subnav-label {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Sections land below both sticky bars when jumped to. */
+section[id] {
+  scroll-margin-top: 130px;
+}
+
+@media (max-width: 720px) {
+  .subnav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .subnav::-webkit-scrollbar { display: none; }
+  .subnav-group { flex: 0 0 auto; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}

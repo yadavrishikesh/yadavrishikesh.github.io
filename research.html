@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
 
   <!-- Behaviour: mobile menu + active nav link. Safe to defer. -->
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js?v=2" defer></script>
 </head>
 <body>
 
@@ -76,10 +76,29 @@
     </figure>
   </div>
 
+  <!-- Jump links to each section (see components/subnav.css) -->
+  <nav class="subnav" aria-label="On this page">
+    <span class="subnav-group">
+      <span class="subnav-label">Research Group</span>
+      <a href="#group">PhD</a>
+      <a href="#students">Master&rsquo;s &amp; BTech</a>
+    </span>
+    <a href="#packages">Packages &amp; Tools</a>
+    <span class="subnav-group">
+      <span class="subnav-label">Manuscripts</span>
+      <a href="#in-preparation">In Preparation</a>
+      <a href="#submitted">Submitted</a>
+      <a href="#published">Published</a>
+    </span>
+    <a href="#book-chapters">Book Chapters</a>
+    <a href="#thesis">PhD Thesis</a>
+    <a href="#reviewer">Reviewer</a>
+  </nav>
+
   <!-- ============================================================
        1. PhD STUDENTS
        ============================================================ -->
-  <section class="block">
+  <section class="block" id="group">
     <div class="block-head">
       <h2>PhD Students</h2>
       <span class="block-count">group &middot; 06</span>
@@ -148,7 +167,7 @@
   <!-- ============================================================
        2. MASTERS & BTECH STUDENTS
        ============================================================ -->
-  <section class="block">
+  <section class="block" id="students">
     <div class="block-head">
       <h2>Masters &amp; BTech Students</h2>
       <span class="block-count">group &middot; 04</span>
@@ -199,7 +218,7 @@
   <!-- ============================================================
        3. PACKAGES AND TOOLS
        ============================================================ -->
-  <section class="block">
+  <section class="block" id="packages">
     <div class="block-head">
       <h2>Packages and Tools</h2>
       <span class="block-count">software</span>
@@ -233,7 +252,7 @@
   <!-- ============================================================
        4. MANUSCRIPTS IN PREPARATION
        ============================================================ -->
-  <section class="block">
+  <section class="block" id="in-preparation">
     <div class="block-head">
       <h2>Manuscripts in Preparation</h2>
       <span class="block-count">in progress</span>
@@ -269,7 +288,7 @@
   <!-- ============================================================
        5. PREPRINTS — submitted / under review, newest first
        ============================================================ -->
-  <section class="block">
+  <section class="block" id="submitted">
     <div class="block-head">
       <h2>Preprints &amp; Submitted Manuscripts</h2>
       <span class="block-count">arXiv</span>
@@ -309,7 +328,7 @@
   <!-- ============================================================
        6. PUBLISHED AND ACCEPTED MANUSCRIPTS — newest first
        ============================================================ -->
-  <section class="block">
+  <section class="block" id="published">
     <div class="block-head">
       <h2>Published &amp; Accepted Manuscripts</h2>
       <span class="block-count">publications</span>
@@ -406,7 +425,7 @@
   <!-- ============================================================
        BOOK CHAPTERS
        ============================================================ -->
-  <section class="block">
+  <section class="block" id="book-chapters">
     <div class="block-head">
       <h2>Book Chapters</h2>
       <span class="block-count">chapters</span>
@@ -429,7 +448,7 @@
   <!-- ============================================================
        PhD THESIS
        ============================================================ -->
-  <section class="block">
+  <section class="block" id="thesis">
     <div class="block-head">
       <h2>PhD Thesis</h2>
       <span class="block-count">2022</span>
@@ -452,7 +471,7 @@
   <!-- ============================================================
        7. REVIEWING
        ============================================================ -->
-  <section class="block">
+  <section class="block" id="reviewer">
     <div class="block-head">
       <h2>Reviewer</h2>
       <span class="block-count">service</span>

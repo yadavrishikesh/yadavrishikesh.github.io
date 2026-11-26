@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
 
   <!-- Behaviour: mobile menu + active nav link. Safe to defer. -->
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js?v=2" defer></script>
 </head>
 <body>
 
@@ -53,11 +53,19 @@
     <p class="page-intro">Courses at IIT Mandi, short courses and masterclasses, and slides on key topics. The Deep Learning Reading Group is on the <a href="reading-group.html">Reading Group</a> page.</p>
   </div>
 
+  <!-- Jump links to each section (see components/subnav.css) -->
+  <nav class="subnav" aria-label="On this page">
+    <a href="#courses">Courses at IIT Mandi</a>
+    <a href="#short-courses">Short Courses &amp; Masterclasses</a>
+    <a href="#slides">Teaching Slides</a>
+    <a href="#courses-taken">Courses Taken</a>
+  </nav>
+
   <!-- ============================================================
        COURSES AT IIT MANDI — one .entry per course offering,
        newest first.
        ============================================================ -->
-  <section class="block">
+  <section class="block" id="courses">
     <div class="block-head">
       <h2>Courses at IIT Mandi</h2>
       <span class="block-count">instructor</span>
@@ -88,7 +96,7 @@
     </div>
   </section>
 
-  <section class="block">
+  <section class="block" id="short-courses">
     <div class="block-head">
       <h2>Short Courses &amp; Masterclasses</h2>
       <span class="block-count">workshops</span>
@@ -125,7 +133,7 @@
     </div>
   </section>
 
-  <section class="block">
+  <section class="block" id="slides">
     <div class="block-head">
       <h2>Teaching Slides on Key Topics</h2>
       <span class="block-count">slides</span>
@@ -165,7 +173,7 @@
     </div>
   </section>
 
-  <section class="block">
+  <section class="block" id="courses-taken">
     <div class="block-head">
       <h2>Key Master&rsquo;s and PhD Courses</h2>
     </div>

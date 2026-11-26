@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
 
   <!-- Behaviour: mobile menu + active nav link. Safe to defer. -->
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js?v=2" defer></script>
 </head>
 <body>
 
@@ -53,10 +53,17 @@
     <p class="page-intro">Workshops organized, invited and contributed talks, and workshops attended.</p>
   </div>
 
+  <!-- Jump links to each section (see components/subnav.css) -->
+  <nav class="subnav" aria-label="On this page">
+    <a href="#organized">Workshops Organized</a>
+    <a href="#talks">Invited &amp; Contributed Talks</a>
+    <a href="#attended">Workshops &amp; Schools Attended</a>
+  </nav>
+
   <!-- ============================================================
        1. WORKSHOPS ORGANIZED
        ============================================================ -->
-  <section class="block">
+  <section class="block" id="organized">
     <div class="block-head">
       <h2>Workshops Organized</h2>
       <span class="block-count">organized</span>
@@ -94,7 +101,7 @@
   <!-- ============================================================
        2. INVITED & CONTRIBUTED TALKS
        ============================================================ -->
-  <section class="block">
+  <section class="block" id="talks">
     <div class="block-head">
       <h2>Invited &amp; Contributed Talks</h2>
       <span class="block-count">talks</span>
@@ -207,7 +214,7 @@
   <!-- ============================================================
        3. WORKSHOPS & SCHOOLS ATTENDED
        ============================================================ -->
-  <section class="block">
+  <section class="block" id="attended">
     <div class="block-head">
       <h2>Workshops &amp; Schools Attended</h2>
       <span class="block-count">attended</span>

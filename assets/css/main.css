@@ -54,6 +54,7 @@
 @import url("components/simple-list.css");
 @import url("components/edit-note.css");
 @import url("components/live-link.css");
+@import url("components/subnav.css");
 
 /* ---- 4. Pages -------------------------------------------- */
 @import url("pages/page-head.css");
