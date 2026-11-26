@@ -99,8 +99,23 @@
 
 /* ---- Featured course box (holds the lecture plan) -------- */
 .entry-featured {
-  border-left: 4px solid var(--pine);
+  --accent: var(--pine);
+  --accent-tint: #edf5f1;
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--rule));
+  border-left: 5px solid var(--accent);
+  background: linear-gradient(100deg, var(--accent-tint) 0%, var(--card) 55%);
+  box-shadow: 0 3px 12px rgba(28, 35, 51, 0.06);
   padding: 18px 20px;
+}
+
+/* Colour variants, one per short course. */
+.entry-featured.accent-pine { --accent: var(--pine);  --accent-tint: #e6f2ec; }
+.entry-featured.accent-blue { --accent: var(--link);  --accent-tint: #e8f0fb; }
+.entry-featured.accent-gold { --accent: var(--gold);  --accent-tint: #f8f0de; }
+
+.entry-featured .entry-id {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .entry-featured .entry-title {
@@ -112,10 +127,10 @@
   margin: 0 0 6px;
   font-size: 15px;
   font-weight: 500;
-  color: var(--pine);
+  color: var(--accent, var(--pine));
 }
 
 /* Day cards sit on the page colour inside the white box. */
 .entry-featured .lecture-day {
-  background: var(--paper);
+  background: var(--card);
 }

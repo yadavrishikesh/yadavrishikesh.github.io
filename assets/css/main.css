@@ -55,7 +55,7 @@
 @import url("components/edit-note.css");
 @import url("components/live-link.css");
 @import url("components/subnav.css?v=2");
-@import url("components/lecture-plan.css");
+@import url("components/lecture-plan.css?v=2");
 
 /* ---- 4. Pages -------------------------------------------- */
 @import url("pages/page-head.css");
