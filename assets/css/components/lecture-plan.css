@@ -96,3 +96,26 @@
   color: var(--ink-faint);
   font-style: italic;
 }
+
+/* ---- Featured course box (holds the lecture plan) -------- */
+.entry-featured {
+  border-left: 4px solid var(--pine);
+  padding: 18px 20px;
+}
+
+.entry-featured .entry-title {
+  font-size: 21px;
+  margin-bottom: 2px;
+}
+
+.entry-subtitle {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--pine);
+}
+
+/* Day cards sit on the page colour inside the white box. */
+.entry-featured .lecture-day {
+  background: var(--paper);
+}
