@@ -21,46 +21,86 @@
 
 .subnav {
   position: sticky;
-  top: 61px;                      /* height of .site-header */
+  top: 61px;                      /* height of .site-header (main.js keeps it exact) */
   z-index: 10;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 6px 8px;
-  margin: 6px 0 0;
-  padding: 10px 0;
-  background: rgba(250, 248, 243, 0.95);
+  gap: 8px 10px;
+  margin: 10px 0 0;
+  padding: 12px 14px;
+  background: rgba(255, 254, 251, 0.97);   /* --card */
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--rule);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--pine);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 14px rgba(28, 35, 51, 0.07);
+}
+
+/* "Jump to" title at the start of the bar. */
+.subnav-title {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--pine);
+  margin-right: 4px;
+  white-space: nowrap;
 }
 
 .subnav a,
 .subnav-label {
   font-family: var(--sans);
-  font-size: 13.5px;
   line-height: 1;
   white-space: nowrap;
 }
 
 .subnav a {
-  padding: 7px 12px;
-  border: 1px solid var(--rule);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 13px;
+  font-size: 14.5px;
+  font-weight: 500;
+  border: 1px solid #c6d6ec;
   border-radius: 999px;
-  background: var(--card);
-  color: var(--ink-soft);
+  background: #eef4fc;
+  color: var(--link);
   text-decoration: none;
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  transition: background 0.15s, color 0.15s, border-color 0.15s, transform 0.15s;
 }
 
-.subnav a:hover {
-  color: var(--link-hover);
+.subnav a:hover,
+.subnav a:focus-visible {
+  background: #dde9f8;
   border-color: var(--link);
+  color: var(--link-hover);
+  transform: translateY(-1px);
 }
 
 .subnav a.is-active {
   background: var(--pine);
   border-color: var(--pine);
   color: #fff;
+  box-shadow: 0 2px 6px rgba(47, 111, 94, 0.3);
+}
+
+/* Item count added by main.js, e.g. "Published 10". */
+.subnav-count {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  min-width: 20px;
+  padding: 3px 6px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--link);
+  text-align: center;
+}
+
+.subnav a.is-active .subnav-count {
+  color: var(--pine);
 }
 
 /* A labelled cluster of related links, e.g. Manuscripts. */
@@ -68,22 +108,25 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 3px 4px 3px 10px;
-  border: 1px dashed var(--rule);
+  padding: 4px 5px 4px 12px;
+  background: #f6f1e4;
+  border: 1px solid var(--rule);
   border-radius: 999px;
 }
 
 .subnav-label {
   font-family: var(--mono);
   font-size: 12px;
-  color: var(--ink-faint);
+  font-weight: 600;
+  color: var(--gold);
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
+  margin-right: 2px;
 }
 
 /* Sections land below both sticky bars when jumped to. */
 section[id] {
-  scroll-margin-top: 130px;
+  scroll-margin-top: 150px;
 }
 
 @media (max-width: 720px) {
@@ -95,6 +138,8 @@ section[id] {
   }
   .subnav::-webkit-scrollbar { display: none; }
   .subnav-group { flex: 0 0 auto; }
+  .subnav-title { display: none; }
+  .subnav { padding: 10px; }
 }
 
 @media (prefers-reduced-motion: no-preference) {

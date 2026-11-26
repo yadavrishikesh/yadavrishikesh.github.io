@@ -85,6 +85,15 @@
       var sec = document.getElementById(links[i].getAttribute("href").slice(1));
       if (sec) {
         pairs.push({ link: links[i], sec: sec });
+        // Show how many items the section holds (cards with an ID label).
+        var n = sec.querySelectorAll(".entry-id").length;
+        if (n > 0 && !links[i].querySelector(".subnav-count")) {
+          var badge = document.createElement("span");
+          badge.className = "subnav-count";
+          badge.textContent = n;
+          badge.setAttribute("aria-label", n + " items");
+          links[i].appendChild(badge);
+        }
       }
     }
     // Keep the bar tucked right under the sticky site header,
@@ -99,7 +108,7 @@
     function update() {
       var current = null;
       for (var j = 0; j < pairs.length; j++) {
-        if (pairs[j].sec.getBoundingClientRect().top <= 150) {
+        if (pairs[j].sec.getBoundingClientRect().top <= 170) {
           current = pairs[j];
         }
       }
